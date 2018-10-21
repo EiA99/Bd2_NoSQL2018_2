@@ -34,7 +34,7 @@ div {
 	border-bottom: solid 1px #ccc;
 }
 
-/* button 
+/* button
 ---------------------------------------------- */
 .button {
 	display: inline-block;
@@ -49,7 +49,7 @@ div {
 	font: 14px/100% Arial, Helvetica, sans-serif;
 	padding: .5em 2em .55em;
 	text-shadow: 0 1px 1px rgba(0,0,0,.3);
-	-webkit-border-radius: .5em; 
+	-webkit-border-radius: .5em;
 	-moz-border-radius: .5em;
 	border-radius: .5em;
 	-webkit-box-shadow: 0 1px 2px rgba(0,0,0,.2);
@@ -123,7 +123,7 @@ div {
 		  <tr><td>Fecha desde:</td><td><input type="text" name="fedesde" value="2018/10/01"  maxlength="10"></td></tr>
 		  <tr><td>Fecha hasta:</td><td><input type="text" name="fehasta" value="2018/11/01"  maxlength="10"></td></tr>
 		  <tr><td colspan="2"><button class="button mi_color">Consulta Infracciones</button></td></tr>
-		</table>  
+		</table>
 		</form>
 	</td>
 	<td></td>
@@ -135,7 +135,25 @@ div {
 		  <tr><td>Mes:</td><td><input type="text" name="mes" value="10"  maxlength="2"></td></tr>
 		  <tr><td>Placa:</td><td><input type="text" name="placa" value="AAA111"  maxlength="6"></td></tr>
 		  <tr><td colspan="2"><button class="button mi_color">Estadistica Mensual</button></td></tr>
-		</table>  
+		</table>
+		</form>
+	</td>
+	<td>
+		<!-- Consulta por cedulo - Recuerde cambiar la acción para llamar su programa -->
+		<form name="q3" action="">
+		<table>
+		  <tr><td>Cedula:</td><td><input type="number" name="cedula" value="1234567890"  maxlength="10"></td></tr>
+		  <tr><td colspan="2"><button class="button mi_color">Consulta por cedula</button></td></tr>
+		</table>
+		</form>
+	</td>
+	<td>
+		<!-- Estadistica Mensual - Recuerde cambiar la acción para llamar su programa -->
+		<form name="q4" action="">
+		<table>
+		  <tr><td>Placa:</td><td><input type="text" name="placa" value="AAA111"  maxlength="6"></td></tr>
+		  <tr><td colspan="2"><button class="button mi_color">Historico</button></td></tr>
+		</table>
 		</form>
 	</td>
 </tr>
@@ -147,27 +165,27 @@ div {
 <table>
 <tr><th colspan="3"><H1>Agente del transito</H1></th></tr>
 <tr>
-	<td><H3>Consulta velocidades por sitio</H3></td><td>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</td><td><H3>Infracciones Velocidad</H3></td>
+	<td><H3>Consulta velocidades por sitio</H3></td><td></td><td><H3>Infracciones Velocidad</H3></td><td><H3>Consulta por cedula</H3></td><td><H3>Historico</H3></td>
 </tr>
 <tr>
 	<td>
 		<!-- Consulta velocidades por sitio - Recuerde cambiar la acción para llamar su programa -->
-		<form name="q3" action="">
+		<form name="q5" action="">
 		<table>
 		  <tr><td>Fecha:</td><td><input type="text" name="fecha" value="2018/10/01"  maxlength="10"></td></tr>
 		  <tr><td>Lugar:</td><td><input type="text" name="lugar" value="1"  maxlength="1"></td></tr>
 		  <tr><td colspan="2"><button class="button mi_color">Consulta velocidades por sitio</button></td></tr>
-		</table>  
+		</table>
 		</form>
 	</td>
 	<td></td>
 	<td>
 		<!-- Infracciones Velocidad - Recuerde cambiar la acción para llamar su programa -->
-		<form name="q4" action="">
+		<form name="q6" action="">
 		<table>
 		  <tr><td>Fecha:</td><td><input type="text" name="fecha" value="2018/10/01"  maxlength="10"></td></tr>
 		  <tr><td colspan="2"><button class="button mi_color">Infracciones Velocidad</button></td></tr>
-		</table>  
+		</table>
 		</form>
 	</td>
 </tr>
