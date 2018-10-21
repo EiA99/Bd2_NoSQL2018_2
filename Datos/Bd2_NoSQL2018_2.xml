@@ -1,0 +1,87 @@
+<KDMPROJECT>
+  <ERMODEL>
+    <mxGraphModel dx="0" dy="25" grid="1" guides="1" tooltips="1" connect="1" fold="1" page="0" pageScale="1" pageWidth="826" pageHeight="1169">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        <mxCell id="2" value="infracciones" style="whiteSpace=wrap" vertex="1" parent="1">
+          <mxGeometry x="170" y="153" width="100" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="3" value="Velocidad" style="ellipse" vertex="1" parent="1">
+          <mxGeometry x="90" y="73" width="80" height="35" as="geometry"/>
+        </mxCell>
+        <mxCell id="4" value="fecha" style="ellipse" vertex="1" parent="1">
+          <mxGeometry x="180" y="63" width="80" height="35" as="geometry"/>
+        </mxCell>
+        <mxCell id="5" value="lugar" style="ellipse" vertex="1" parent="1">
+          <mxGeometry x="270" y="63" width="80" height="35" as="geometry"/>
+        </mxCell>
+        <mxCell id="6" value="placa" style="ellipse" vertex="1" parent="1">
+          <mxGeometry x="320" y="118.5" width="80" height="35" as="geometry"/>
+        </mxCell>
+        <mxCell id="7" value="id" style="ellipse;fontStyle=4" vertex="1" parent="1">
+          <mxGeometry x="50" y="128.5" width="80" height="35" as="geometry"/>
+        </mxCell>
+        <mxCell id="8" value="propietarios" style="whiteSpace=wrap" vertex="1" parent="1">
+          <mxGeometry x="620" y="152.5" width="100" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="9" value="placa" style="ellipse;fontStyle=4" vertex="1" parent="1">
+          <mxGeometry x="530" y="87.5" width="80" height="35" as="geometry"/>
+        </mxCell>
+        <mxCell id="10" value="cedula" style="ellipse" vertex="1" parent="1">
+          <mxGeometry x="630" y="87.5" width="80" height="35" as="geometry"/>
+        </mxCell>
+        <mxCell id="11" value="nombre" style="ellipse" vertex="1" parent="1">
+          <mxGeometry x="730" y="87.5" width="80" height="35" as="geometry"/>
+        </mxCell>
+        <mxCell id="13" value="telefono" style="ellipse;shape=doubleEllipse;whiteSpace=wrap" vertex="1" parent="1">
+          <mxGeometry x="760" y="160.5" width="80" height="35" as="geometry"/>
+        </mxCell>
+        <mxCell id="16" style="exitX=0;exitY=0.25" edge="1" parent="1" source="2" target="7">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="17" style="exitX=0.25;exitY=0;entryX=0.5;entryY=1" edge="1" parent="1" source="2" target="3">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="18" style="exitX=0.5;exitY=0;entryX=0.5;entryY=1" edge="1" parent="1" source="2" target="4">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="19" style="exitX=0.75;exitY=0;entryX=0.5;entryY=1" edge="1" parent="1" source="2" target="5">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="20" style="exitX=1;exitY=0.5;entryX=0;entryY=0.5" edge="1" parent="1" source="2" target="6">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="21" style="exitX=0.25;exitY=0;entryX=0.5;entryY=1" edge="1" parent="1" source="8" target="9">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="22" style="exitX=0.5;exitY=0;entryX=0.5;entryY=1" edge="1" parent="1" source="8" target="10">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="23" style="exitX=0.75;exitY=0;entryX=0.5;entryY=1" edge="1" parent="1" source="8" target="11">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="24" style="exitX=1;exitY=0.5;entryX=0;entryY=0.5" edge="1" parent="1" source="8" target="13">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="25" value="tiene" style="shape=card;whiteSpace=wrap" vertex="1" parent="1">
+          <mxGeometry x="410" y="160.5" width="130" height="65" as="geometry"/>
+        </mxCell>
+        <mxCell id="26" value="n" style="exitX=1;exitY=0.5;entryX=0;entryY=0.5;entryPerimeter=0" edge="1" parent="1" source="2" target="25">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="27" value="1" style="exitX=1;exitY=0.5;exitPerimeter=0;entryX=0;entryY=0.5" edge="1" parent="1" source="25" target="8">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+    <KEYS_JSON>
+{}    </KEYS_JSON>
+  </ERMODEL>
+  <ACCESS_PATTERNS width="1150px" height="" left="5px" top="130px">
+    <Q1>
+      <APTYPE>
+simple      </APTYPE>
+    </Q1>
+  </ACCESS_PATTERNS>
+</KDMPROJECT>
