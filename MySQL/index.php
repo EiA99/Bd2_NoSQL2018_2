@@ -112,7 +112,7 @@ div {
 <table>
 <tr><th colspan="3"><H1>Usuario</H1></th></tr>
 <tr>
-	<td><H3>Consulta Infracciones</H3></td><td>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</td><td><H3>Estadistica Mensual</H3></td>
+	<td><H3>Consulta Infracciones</H3></td><td></td><td><H3>Estadistica Mensual</H3></td><td><H3>Consulta por cedula</H3></td><td><H3>Historico</H3></td>
 </tr>
 <tr>
 	<td>
@@ -165,7 +165,7 @@ div {
 <table>
 <tr><th colspan="3"><H1>Agente del transito</H1></th></tr>
 <tr>
-	<td><H3>Consulta velocidades por sitio</H3></td><td></td><td><H3>Infracciones Velocidad</H3></td><td><H3>Consulta por cedula</H3></td><td><H3>Historico</H3></td>
+	<td><H3>Consulta velocidades por sitio</H3></td>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<td></td><td><H3>Infracciones Velocidad</H3></td>
 </tr>
 <tr>
 	<td>
