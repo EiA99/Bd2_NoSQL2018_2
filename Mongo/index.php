@@ -168,7 +168,7 @@ div {
 <tr>
 	<td>
 		<!-- Consulta velocidades por sitio - Recuerde cambiar la acción para llamar su programa -->
-		<form name="q3" action="">
+		<form name="q5" action="">
 		<table>
 		  <tr><td>Fecha:</td><td><input type="text" name="fecha" value="2018/10/01"  maxlength="10"></td></tr>
 		  <tr><td>Lugar:</td><td><input type="text" name="lugar" value="1"  maxlength="1"></td></tr>
@@ -179,7 +179,7 @@ div {
 	<td></td>
 	<td>
 		<!-- Infracciones Velocidad - Recuerde cambiar la acción para llamar su programa -->
-		<form name="q4" action="">
+		<form name="q6" action="">
 		<table>
 		  <tr><td>Fecha:</td><td><input type="text" name="fecha" value="2018/10/01"  maxlength="10"></td></tr>
 		  <tr><td colspan="2"><button class="button mi_color">Infracciones Velocidad</button></td></tr>
