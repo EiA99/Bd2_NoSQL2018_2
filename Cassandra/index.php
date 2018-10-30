@@ -111,7 +111,7 @@ div {
 <table>
 <tr><th colspan="3"><H1>Usuario</H1></th></tr>
 <tr>
-	<td><H3>Consulta Infracciones</H3></td><td><H3>Estadistica Mensual</H3></td><td><H3>Consulta por cedula</H3></td><td><H3>Historico</H3></td>
+	<td><H3>Consulta Infracciones</H3></td><td>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</td><td><H3>Estadistica Mensual</H3></td><td>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</td><td><H3>Consulta por cedula</H3></td>
 </tr>
 <tr>
 	<td>
@@ -125,7 +125,7 @@ div {
 		</table>  
 		</form>
 	</td>
-	
+	<td></td>
 	<td>
 		<!-- Estadistica Mensual - Recuerde cambiar la acción para llamar su programa -->
 		<form name="q2" action="">
@@ -137,21 +137,13 @@ div {
 		</table>  
 		</form>
 	</td>
+	<td></td>
 	<td>
-		<!-- Consulta por cedulo - Recuerde cambiar la acción para llamar su programa -->
+		<!-- Consulta por cedula - Recuerde cambiar la acción para llamar su programa -->
 		<form name="q3" action="">
 		<table>
 		  <tr><td>Cedula:</td><td><input type="number" name="cedula" value="1234567890"  maxlength="10"></td></tr>
 		  <tr><td colspan="2"><button class="button mi_color">Consulta por cedula</button></td></tr>
-		</table>  
-		</form>
-	</td>
-	<td>
-		<!-- Estadistica Mensual - Recuerde cambiar la acción para llamar su programa -->
-		<form name="q4" action="">
-		<table>
-		  <tr><td>Placa:</td><td><input type="text" name="placa" value="AAA111"  maxlength="6"></td></tr>
-		  <tr><td colspan="2"><button class="button mi_color">Historico</button></td></tr>
 		</table>  
 		</form>
 	</td>
@@ -164,12 +156,12 @@ div {
 <table>
 <tr><th colspan="3"><H1>Agente del transito</H1></th></tr>
 <tr>
-	<td><H3>Consulta velocidades por sitio</H3></td><td>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</td><td><H3>Infracciones Velocidad</H3></td>
+	<td><H3>Consulta velocidades por sitio</H3></td><td>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</td><td><H3>Infracciones Velocidad</H3></td><td>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</td><td><H3>Datos propietario</H3></td>
 </tr>
 <tr>
 	<td>
 		<!-- Consulta velocidades por sitio - Recuerde cambiar la acción para llamar su programa -->
-		<form name="q5" action="">
+		<form name="q4" action="">
 		<table>
 		  <tr><td>Fecha:</td><td><input type="text" name="fecha" value="2018/10/01"  maxlength="10"></td></tr>
 		  <tr><td>Lugar:</td><td><input type="text" name="lugar" value="1"  maxlength="1"></td></tr>
@@ -180,10 +172,20 @@ div {
 	<td></td>
 	<td>
 		<!-- Infracciones Velocidad - Recuerde cambiar la acción para llamar su programa -->
-		<form name="q6" action="">
+		<form name="q5" action="">
 		<table>
 		  <tr><td>Fecha:</td><td><input type="text" name="fecha" value="2018/10/01"  maxlength="10"></td></tr>
 		  <tr><td colspan="2"><button class="button mi_color">Infracciones Velocidad</button></td></tr>
+		</table>  
+		</form>
+	</td>
+	<td></td>
+	<td>
+		<!-- Informacion del dueño del vehiculo - Recuerde cambiar la acción para llamar su programa -->
+		<form name="q6" action="">
+		<table>
+		  <tr><td>Placa:</td><td><input type="text" name="placa" value="AAA111"  maxlength="6"></td></tr>
+		  <tr><td colspan="2"><button class="button mi_color">Datos propietario</button></td></tr>
 		</table>  
 		</form>
 	</td>
