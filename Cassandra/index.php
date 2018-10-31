@@ -137,13 +137,26 @@ div {
 		</table>  
 		</form>
 	</td>
-	<td></td>
+	
 	<td>
 		<!-- Consulta por cedula - Recuerde cambiar la acción para llamar su programa -->
 		<form name="q3" action="">
 		<table>
 		  <tr><td>Cedula:</td><td><input type="number" name="cedula" value="1234567890"  maxlength="10"></td></tr>
 		  <tr><td colspan="2"><button class="button mi_color">Consulta por cedula</button></td></tr>
+		</table>  
+		</form>
+	</td>
+	<td>
+		<!-- Estadistica Mensual - Recuerde cambiar la acción para llamar su programa -->
+		<form name="insertar" action="insertar.php" method="get">
+		<table>
+		  <tr><td>cedula:</td><td><input type="text" name="cedula" value="2018"  maxlength="4"></td></tr>
+		  <tr><td>velocidad:</td><td><input type="text" name="velocidad" value="10"  maxlength="2"></td></tr>
+		  <tr><td>lugar:</td><td><input type="text" name="lugar" value="AAA111"  maxlength="6"></td></tr>
+		  <tr><td>fecha:</td><td><input type="text" name="tiempo" value="10" ></td></tr>
+		  <tr><td>infracciones_placa:</td><td><input type="text" name="placa" value="AAA111"  maxlength="6"></td></tr>
+		  <input type="submit">
 		</table>  
 		</form>
 	</td>

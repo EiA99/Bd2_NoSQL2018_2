@@ -7,18 +7,19 @@
 	Nota: En Archivo donde no hay que contabilizar los tiempos
 */
 
-/*Se recuperan los argumentos
-$lugar		= htmlspecialchars($_GET["lugar"]);
-$placa		= htmlspecialchars($_GET["placa"]);
-$tiempo		= htmlspecialchars($_GET["tiempo"]);
-$velocidad	= htmlspecialchars($_GET["velocidad"]);
+/*Se recuperan los argumentos*/
+$cedula   = $_GET["cedula"];
+$lugar		= $_GET["lugar"];
+$placa		= $_GET["placa"];
+$tiempo		= $_GET["tiempo"];
+$velocidad	= $_GET["velocidad"];
 
-/*Validación de argumentos
-
+/*Validación de argumentos*/
+echo 'cedula='.   $cedula.'</br>';
 echo 'lugar='. 		$lugar .'</br>';
 echo 'placa='. 		$placa .'</br>';
 echo 'tiempo='. 	$tiempo .'</br>';
-echo 'velocidad='. 	$velocidad;'</br>';
+echo 'velocidad='. 	$velocidad.'</br>';
 
 
 /* ==--> Aqui ustede debe hacer la conexion a la base de datos*/
