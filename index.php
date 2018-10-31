@@ -34,7 +34,7 @@ div {
 	border-bottom: solid 1px #ccc;
 }
 
-/* button 
+/* button
 ---------------------------------------------- */
 .button {
 	display: inline-block;
@@ -49,7 +49,7 @@ div {
 	font: 14px/100% Arial, Helvetica, sans-serif;
 	padding: .5em 2em .55em;
 	text-shadow: 0 1px 1px rgba(0,0,0,.3);
-	-webkit-border-radius: .5em; 
+	-webkit-border-radius: .5em;
 	-moz-border-radius: .5em;
 	border-radius: .5em;
 	-webkit-box-shadow: 0 1px 2px rgba(0,0,0,.2);
@@ -169,9 +169,9 @@ div {
 <body>
 <div>
 <H1>Seleccione la base de datos</H1><br />
-	<a href="Cassandra/index.php" class="button orange">Cassandra</a> 
-	<a href="Mongo/index.php" class="button gray">MongoDB</a> 
-	<a href="MySQL/index.php" class="button rosy">MySQL o MariaDB</a> 
+	<a href="Cassandra/index.php" class="button orange">Cassandra</a>
+	<a href="MongoDB/index.php" class="button gray">MongoDB</a>
+	<a href="MySQL/index.php" class="button rosy">MySQL o MariaDB</a>
 	<br /><br />
 </div>
 <div>
@@ -181,10 +181,10 @@ div {
   <input type="radio" name="bd" value="Cassandra" checked > Cassandra </input>
   <input type="radio" name="bd" value="MongoDB"> MongoDB</input>
   <input type="radio" name="bd" value="MySQL"> MySQL o MariaDB</input>
- </fieldset> 
+ </fieldset>
   Cantidad de registros:<br />
   <input type="text" name="registros" value="100"  maxlength="7">
-  
+
   <button class="button blue">Generar</button>
 </form>
 </div>
