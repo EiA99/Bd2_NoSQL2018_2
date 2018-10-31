@@ -22,7 +22,7 @@ CREATE TABLE vehiculos_by_lugar (lugar INT, fecha TIMESTAMP, infracciones_placa 
 /* SELECT fecha, infracciones_placa, velocidad FROM vehiculos_by_lugar WHERE lugar=? and fecha=?; */
 
 // Q5:
-CREATE TABLE infracciones_by_fecha (fecha TEXT, velocidad INT, lugar INT, infracciones_placa TEXT, PRIMARY KEY (fecha,velocidad,lugar,infracciones_placa)) WITH CLUSTERING ORDER BY (velocidad ASC, lugar ASC, infracciones_placa ASC);
+CREATE TABLE infracciones_by_fecha (fecha TIMESTAMP, velocidad TEXT, lugar TEXT, infracciones_placa TEXT, PRIMARY KEY (fecha,velocidad,lugar,infracciones_placa)) WITH CLUSTERING ORDER BY (velocidad ASC, lugar ASC, infracciones_placa ASC);
 
 /* SELECT fecha, lugar, infracciones_placa FROM infracciones_by_fecha WHERE fecha=? and velocidad>?; */
 
