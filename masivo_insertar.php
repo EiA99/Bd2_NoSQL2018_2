@@ -114,7 +114,7 @@ table, th, td {
 </tr>
 <?php
 $time_start = microtime(true); // Tiempo Inicial Proceso
-$fecha = '2005/12/30';
+$fecha = '2018/10/01';
 	/*Ciclo*/
 	for( $i= 1 ; $i <= $registros ; $i++ ) {
 		/*Genera los valores de forma aleatoria*/

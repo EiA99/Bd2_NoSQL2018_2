@@ -1,4 +1,5 @@
 <?php
+  $time_start = microtime(true);
 
   $placa = htmlspecialchars($_GET["placa"]);
   $fedesde = htmlspecialchars($_GET["fedesde"]);;
@@ -47,5 +48,8 @@
     echo "</tr>";
   }
   echo '</table>';
+  $time_end = microtime(true); // Tiempo Final
+  $time = $time_end - $time_start; // Tiempo Consumido
+  echo "\n</br></br><h2>Tiempo de ejecución ".$time." segundos</h2>";
 
 ?>
