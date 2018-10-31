@@ -116,7 +116,7 @@ div {
 <tr>
 	<td>
 		<!-- Consulta Infracciones - Recuerde cambiar la acción para llamar su programa -->
-		<form name="q1" action="">
+		<form name="q1" action="q1.php">
 		<table>
 			<tr><td>Placa:</td><td><input type="text" name="placa" value="AAA111"  maxlength="6"></td></tr>
 		  <tr><td>Fecha desde:</td><td><input type="text" name="fedesde" value="2018/10/01"  maxlength="10"></td></tr>
@@ -128,7 +128,7 @@ div {
 	<td></td>
 	<td>
 		<!-- Estadistica Mensual - Recuerde cambiar la acción para llamar su programa -->
-		<form name="q2" action="">
+		<form name="q2" action="q2.php">
 		<table>
 		  <tr><td>Año:</td><td><input type="text" name="anio" value="2018"  maxlength="4"></td></tr>
 		  <tr><td>Mes:</td><td><input type="text" name="mes" value="10"  maxlength="2"></td></tr>
@@ -137,7 +137,7 @@ div {
 		</table>  
 		</form>
 	</td>
-	
+	<td></td>
 	<td>
 		<!-- Consulta por cedula - Recuerde cambiar la acción para llamar su programa -->
 		<form name="q3" action="">
@@ -147,19 +147,7 @@ div {
 		</table>  
 		</form>
 	</td>
-	<td>
-		<!-- Estadistica Mensual - Recuerde cambiar la acción para llamar su programa -->
-		<form name="insertar" action="insertar.php" method="get">
-		<table>
-		  <tr><td>cedula:</td><td><input type="text" name="cedula" value="2018"  maxlength="4"></td></tr>
-		  <tr><td>velocidad:</td><td><input type="text" name="velocidad" value="10"  maxlength="2"></td></tr>
-		  <tr><td>lugar:</td><td><input type="text" name="lugar" value="AAA111"  maxlength="6"></td></tr>
-		  <tr><td>fecha:</td><td><input type="text" name="tiempo" value="10" ></td></tr>
-		  <tr><td>infracciones_placa:</td><td><input type="text" name="placa" value="AAA111"  maxlength="6"></td></tr>
-		  <input type="submit">
-		</table>  
-		</form>
-	</td>
+	
 </tr>
 </table>
 </div>
