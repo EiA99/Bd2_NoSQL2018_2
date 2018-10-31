@@ -1,5 +1,7 @@
 <?php
 
+  $time_start = microtime(true);
+
   $cedula = htmlspecialchars($_GET["cedula"]);
 
   $manager = new MongoDB\Driver\Manager("mongodb://localhost:27017");
@@ -40,5 +42,9 @@
     }
   }
   echo '</table>';
+
+  $time_end = microtime(true); // Tiempo Final
+  $time = $time_end - $time_start; // Tiempo Consumido
+  echo "\n</br></br><h2>Tiempo de ejecución ".$time." segundos</h2>";
 
 ?>
