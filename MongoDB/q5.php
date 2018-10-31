@@ -1,24 +1,21 @@
 <?php
 
-  $placa = htmlspecialchars($_GET["placa"]);
-  $fedesde = htmlspecialchars($_GET["fedesde"]);;
-  $fehasta = htmlspecialchars($_GET["fehasta"]);;
+  $fechaConsulta = htmlspecialchars($_GET["fecha"]);;
+
+  $division = explode("/", $fechaConsulta);
+  $fechaDia = $division[2];
+  $fechaMes = $division[1];
+  $fechaAno = $division[0];
 
   $manager = new MongoDB\Driver\Manager("mongodb://localhost:27017");
-  $query = new MongoDB\Driver\Query(array('placa' => $placa));
+  $query = new MongoDB\Driver\Query(array());
   $cursor = $manager->executeQuery('pruebaP2.infracciones', $query);
-
-  $fechaDesde = explode("/", $fedesde);
-  $desde = $fechaDesde[0] . $fechaDesde[1] . $fechaDesde[2];
-
-  $fechaHasta = explode("/", $fehasta);
-  $hasta = $fechaHasta[0] . $fechaHasta[1] . $fechaHasta[2];
 
   echo '<table style="width:100%" border="1px"> ';
   echo '<th> PLACA </th>';
-  echo '<th> FECHA </th>';
   echo '<th> VELOCIDAD </th>';
   echo '<th> LUGAR </th>';
+  echo '<th> HORA </th>';
   foreach ($cursor as $row) {
 
     $fechaInfraccion = $row->tiempo;
@@ -27,20 +24,16 @@
     $ano = date('Y', $fechaInfraccion);
     $hora = date('h:i:s', $fechaInfraccion);
 
-    $fechaCompleta = $dia . '/' . $mes . '/' . $ano . '/' . $hora;
-
-    $infraccion = $ano . $mes . $dia;
-
     $velocidad = $row->velocidad;
 
     echo '<tr>';
 
     if ($velocidad > 80) {
-      if ($infraccion >= $desde && $infraccion <= $hasta ) {
+      if ($mes == $fechaMes && $ano == $fechaAno && $dia == $fechaDia) {
         echo '<td>' . $row->placa. "</td>";
         echo '<td>' . $row->velocidad. "</td>";
-        echo '<td>' . $fechaCompleta. "</td>";
         echo '<td>' . $row->lugar. "</td>";
+        echo '<td>' . $hora. "</td>";
       }
     }
 
