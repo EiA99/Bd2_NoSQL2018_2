@@ -24,7 +24,7 @@
 
     echo '<tr>';
 
-    if ($velocidad >= 80) {
+    if ($velocidad > 80) {
       if ($anoInfraccion == $ano && $mesInfraccion == $mes) {
         echo '<td>' . $row->velocidad. "</td>";
         echo '<td>' . $row->lugar. "</td>";

@@ -8,10 +8,6 @@
   $fechaMes = $division[1];
   $fechaAno = $division[0];
 
-  foreach ($division as $k) {
-    echo $k;
-  }
-
   $manager = new MongoDB\Driver\Manager("mongodb://localhost:27017");
   $query = new MongoDB\Driver\Query(array('lugar' => $lugar));
   $cursor = $manager->executeQuery('pruebaP2.infracciones', $query);
@@ -23,13 +19,10 @@
   foreach ($cursor as $row) {
 
     $fechaInfraccion = $row->tiempo;
-    echo '<br>' . $fechaInfraccion;
     $dia = date('d', $fechaInfraccion);
     $mes = date('m', $fechaInfraccion);
     $ano = date('Y', $fechaInfraccion);
     $hora = date('h:i:s', $fechaInfraccion);
-
-    echo "<br>" . $ano . $mes . $dia;
 
     $velocidad = $row->velocidad;
 

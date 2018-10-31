@@ -23,7 +23,7 @@
 
       echo '<tr>';
 
-      if ($velocidad >= 80) {
+      if ($velocidad > 80) {
           echo '<td>' . $row2->placa. "</td>";
           echo '<td>' . $row2->velocidad. "</td>";
           echo '<td>' . $row2->tiempo. "</td>";

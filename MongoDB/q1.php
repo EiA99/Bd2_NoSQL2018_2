@@ -14,13 +14,6 @@
   $fechaHasta = explode("/", $fehasta);
   $hasta = $fechaHasta[0] . $fechaHasta[1] . $fechaHasta[2];
 
-
-
-  /*$fechaDesde = strtotime($fedesde);
-  $fechaHasta = strtotime($fehasta);
-  echo(strtotime('2018/31/01'));
-  echo ' FechaDesde: '. $fechaDesde . '</br> FechaHasta: ' . $fechaHasta;*/
-
   echo '<table style="width:100%" border="1px"> ';
   echo '<th> PLACA </th>';
   echo '<th> FECHA </th>';
@@ -36,13 +29,11 @@
 
     $infraccion = $ano . $mes . $dia;
 
-    echo 'Fecha desde: ' . $desde . '<br> Fecha Infraccion: ' . $infraccion . '<br> Fecha Hasta: ' . $hasta;
-
     $velocidad = $row->velocidad;
 
     echo '<tr>';
 
-    if ($velocidad >= 80) {
+    if ($velocidad > 80) {
       if ($infraccion >= $desde && $infraccion <= $hasta ) {
         echo '<td>' . $row->placa. "</td>";
         echo '<td>' . $row->velocidad. "</td>";

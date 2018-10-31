@@ -28,7 +28,7 @@
 
     echo '<tr>';
 
-    if ($velocidad >= 80) {
+    if ($velocidad > 80) {
       if ($mes == $fechaMes && $ano == $fechaAno && $dia == $fechaDia) {
         echo '<td>' . $row->placa. "</td>";
         echo '<td>' . $row->velocidad. "</td>";
