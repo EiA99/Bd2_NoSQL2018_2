@@ -15,12 +15,11 @@ $tiempo		= $_GET["tiempo"];
 $velocidad	= $_GET["velocidad"];
 
 /*Validación de argumentos*/
-echo 'cedula='.   $cedula.'</br>';
+echo 'cedula='.  	$cedula.'</br>';
 echo 'lugar='. 		$lugar .'</br>';
 echo 'placa='. 		$placa .'</br>';
 echo 'tiempo='. 	$tiempo .'</br>';
 echo 'velocidad='. 	$velocidad.'</br>';
-
 
 /* ==--> Aqui ustede debe hacer la conexion a la base de datos*/
 /*
