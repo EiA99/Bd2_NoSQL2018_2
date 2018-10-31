@@ -118,10 +118,10 @@ div {
 		<!-- Consulta Infracciones - Recuerde cambiar la acción para llamar su programa -->
 		<form name="q1" action="">
 		<table>
-		  <tr><td>Placa:</td><td><input type="text" name="placa" value="AAA111"  maxlength="6"></td></tr>
+			<tr><td>Placa:</td><td><input type="text" name="placa" value="AAA111"  maxlength="6"></td></tr>
 		  <tr><td>Fecha desde:</td><td><input type="text" name="fedesde" value="2018/10/01"  maxlength="10"></td></tr>
 		  <tr><td>Fecha hasta:</td><td><input type="text" name="fehasta" value="2018/11/01"  maxlength="10"></td></tr>
-		  <tr><td colspan="2"><button class="button mi_color">Consulta Infracciones</button></td></tr>
+		  <tr><td colspan="2"><button class="button mi_color" >Consulta Infracciones</button></td></tr>
 		</table>  
 		</form>
 	</td>
