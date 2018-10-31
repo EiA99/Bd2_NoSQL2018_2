@@ -8,6 +8,19 @@
   $query = new MongoDB\Driver\Query(array('placa' => $placa));
   $cursor = $manager->executeQuery('pruebaP2.infracciones', $query);
 
+  $fechaDesde = explode("/", $fedesde);
+  $desde = $fechaDesde[0] . $fechaDesde[1] . $fechaDesde[2];
+
+  $fechaHasta = explode("/", $fehasta);
+  $hasta = $fechaHasta[0] . $fechaHasta[1] . $fechaHasta[2];
+
+
+
+  /*$fechaDesde = strtotime($fedesde);
+  $fechaHasta = strtotime($fehasta);
+  echo(strtotime('2018/31/01'));
+  echo ' FechaDesde: '. $fechaDesde . '</br> FechaHasta: ' . $fechaHasta;*/
+
   echo '<table style="width:100%" border="1px"> ';
   foreach ($cursor as $row) {
 
@@ -15,12 +28,12 @@
     $dia = date('d', $fechaInfraccion);
     $mes = date('m', $fechaInfraccion);
     $ano = date('Y', $fechaInfraccion);
+    //$hora = date('h:i:s', $fechaInfraccion);
 
-    //echo 'Fecha: '. $ano . '/' .$mes . '/' .$dia . ' |||||||| ' . $fechaInfraccion;
+    $infraccion = $ano . $mes . $dia;
 
-    $fechaDesde = strtotime($fedesde);
-    $fechaHasta = strtotime($fehasta);
-    echo ' FechaDesde: '. $fechaDesde . ' FechaInfraccion: '. $fechaInfraccion . " FechaHasta " . $fechaHasta;
+    echo 'Fecha desde: ' . $desde . '<br> Fecha Infraccion: ' . $infraccion . '<br> Fecha Hasta: ' . $hasta;
+
 
     $velocidad = $row->velocidad;
 
@@ -32,12 +45,12 @@
     echo '<tr>';
 
     if ($velocidad >= 80) {
-    //  if ($fechaInfraccion >= $fechaDesde && $fechaInfraccion <= $fechaHasta ) {
+      if ($infraccion >= $desde && $infraccion <= $hasta ) {
         echo '<td>' . $row->placa. "</td>";
         echo '<td>' . $row->velocidad. "</td>";
         echo '<td>' . $row->tiempo. "</td>";
         echo '<td>' . $row->lugar. "</td>";
-    //  }
+      }
     }
 
     echo "</tr>";

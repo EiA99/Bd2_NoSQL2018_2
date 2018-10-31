@@ -128,7 +128,7 @@ div {
 	<td></td>
 	<td>
 		<!-- Estadistica Mensual - Recuerde cambiar la acción para llamar su programa -->
-		<form name="q2" action="">
+		<form name="q2" action="q2.php">
 		<table>
 		  <tr><td>Año:</td><td><input type="text" name="anio" value="2018"  maxlength="4"></td></tr>
 		  <tr><td>Mes:</td><td><input type="text" name="mes" value="10"  maxlength="2"></td></tr>
@@ -140,9 +140,9 @@ div {
 	<td></td>
 	<td>
 		<!-- Consulta por cedula - Recuerde cambiar la acción para llamar su programa -->
-		<form name="q3" action="prueba.php">
+		<form name="q3" action="q3.php">
 		<table>
-		  <tr><td>Cedula:</td><td><input type="number" name="cedula" value="1234567890"  maxlength="10"></td></tr>
+		  <tr><td>Cedula:</td><td><input type="number" name="cedula" value="111"  maxlength="10"></td></tr>
 		  <tr><td colspan="2"><button class="button mi_color">Consulta por cedula</button></td></tr>
 		</table>
 		</form>
@@ -161,7 +161,7 @@ div {
 <tr>
 	<td>
 		<!-- Consulta velocidades por sitio - Recuerde cambiar la acción para llamar su programa -->
-		<form name="q4" action="">
+		<form name="q4" action="q4.php">
 		<table>
 		  <tr><td>Fecha:</td><td><input type="text" name="fecha" value="2018/10/01"  maxlength="10"></td></tr>
 		  <tr><td>Lugar:</td><td><input type="text" name="lugar" value="1"  maxlength="1"></td></tr>
@@ -172,7 +172,7 @@ div {
 	<td></td>
 	<td>
 		<!-- Infracciones Velocidad - Recuerde cambiar la acción para llamar su programa -->
-		<form name="q5" action="">
+		<form name="q5" action="q5.php">
 		<table>
 		  <tr><td>Fecha:</td><td><input type="text" name="fecha" value="2018/10/01"  maxlength="10"></td></tr>
 		  <tr><td colspan="2"><button class="button mi_color">Infracciones Velocidad</button></td></tr>
@@ -182,7 +182,7 @@ div {
 	<td></td>
 	<td>
 		<!-- Informacion del dueño del vehiculo - Recuerde cambiar la acción para llamar su programa -->
-		<form name="q6" action="">
+		<form name="q6" action="q6.php">
 		<table>
 		  <tr><td>Placa:</td><td><input type="text" name="placa" value="AAA111"  maxlength="6"></td></tr>
 		  <tr><td colspan="2"><button class="button mi_color">Datos propietario</button></td></tr>

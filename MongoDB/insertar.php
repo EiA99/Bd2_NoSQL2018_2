@@ -26,10 +26,8 @@ echo 'velocidad='. 	$velocidad;'</br>';
 $manager = new MongoDB\Driver\Manager("mongodb://localhost:27017");
 
 // Armar el JSon Para consultar. Ejemplo de JSON { "nombre":"pepe" }
-//$query = new MongoDB\Driver\Query(array('cedula' => $cedula, 'nombre' => $nombre, 'telefono' => array('fijo' => $fijo, 'movil' => $movil)));
 $query = new MongoDB\Driver\Query(array());
 // Se hace la consulta especificando la base de datos y la coleccion
-// OJO CAMBIAR udem.usuarios
 $cursor = $manager->executeQuery('pruebaP2.infracciones', $query);
 
 /* ==--> Se arma el Json*/
