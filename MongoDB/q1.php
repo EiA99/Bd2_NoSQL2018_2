@@ -22,6 +22,10 @@
   echo ' FechaDesde: '. $fechaDesde . '</br> FechaHasta: ' . $fechaHasta;*/
 
   echo '<table style="width:100%" border="1px"> ';
+  echo '<th> PLACA </th>';
+  echo '<th> FECHA </th>';
+  echo '<th> VELOCIDAD </th>';
+  echo '<th> LUGAR </th>';
   foreach ($cursor as $row) {
 
     $fechaInfraccion = $row->tiempo;
@@ -34,13 +38,7 @@
 
     echo 'Fecha desde: ' . $desde . '<br> Fecha Infraccion: ' . $infraccion . '<br> Fecha Hasta: ' . $hasta;
 
-
     $velocidad = $row->velocidad;
-
-    echo '<th> PLACA </th>';
-    echo '<th> FECHA </th>';
-    echo '<th> VELOCIDAD </th>';
-    echo '<th> LUGAR </th>';
 
     echo '<tr>';
 
