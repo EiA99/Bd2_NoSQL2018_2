@@ -90,7 +90,7 @@
     <KEYS_JSON>
 {}    </KEYS_JSON>
   </ERMODEL>
-  <ACCESS_PATTERNS width="1150px" height="" left="474px" top="314px">
+  <ACCESS_PATTERNS width="1150px" height="" left="189px" top="373px">
     <Q1>
       <APTYPE>
 simple      </APTYPE>
@@ -177,11 +177,8 @@ value        </VRS>
       <FR>
         <ATTRIBUTE>
           <DIV>
-            <DIV>
-Infracciones.lugar                      </DIV>
-          </DIV>
+Infracciones.lugar          </DIV>
         </ATTRIBUTE>
-        <CNT/>
       </FR>
     </Q2>
     <Q3>
@@ -410,491 +407,491 @@ Personas.Telefono                                    </DIV>
     </Q6>
   </ACCESS_PATTERNS>
   <LOGICAL_MODEL>
-        <Q1 qTemplate="SELECT |s|Infracciones__Fecha|e|, |s|Infracciones__lugar|e| FROM |s|tableName|e| WHERE |s|Infracciones__Velocidad|e|=? and |s|Infracciones__Placa|e|=? and |s|Infracciones__Fecha|e|&gt;?;">
-            <tbl>
-                <infracciones_by_placa/>
-                <columns>
-                    <velocidad origName="Infracciones__Velocidad">
-                        <K/>
-                        <NOCLUST/>
-                    </velocidad>
-                    <infracciones_placa origName="Infracciones__Placa">
-                        <K/>
-                        <NOCLUST/>
-                    </infracciones_placa>
-                    <fecha origName="Infracciones__Fecha">
-                        <C>
-ASC                        </C>
-                    </fecha>
-                    <lugar origName="Infracciones__lugar">
-                        <C>
-ASC                        </C>
-                    </lugar>
-                </columns>
-            </tbl>
-            <tbl>
-                <infracciones_by_placa1/>
-                <columns>
-                    <infracciones_placa origName="Infracciones__Placa">
-                        <K/>
-                        <NOCLUST/>
-                    </infracciones_placa>
-                    <velocidad origName="Infracciones__Velocidad">
-                        <K/>
-                        <NOCLUST/>
-                    </velocidad>
-                    <fecha origName="Infracciones__Fecha">
-                        <C>
-ASC                        </C>
-                    </fecha>
-                    <lugar origName="Infracciones__lugar">
-                        <C>
-ASC                        </C>
-                    </lugar>
-                </columns>
-            </tbl>
-            <tbl>
-                <infracciones_by_placa2/>
-                <columns>
-                    <velocidad origName="Infracciones__Velocidad">
-                        <K/>
-                        <NOCLUST/>
-                    </velocidad>
-                    <infracciones_placa origName="Infracciones__Placa">
-                        <C>
-ASC                        </C>
-                    </infracciones_placa>
-                    <fecha origName="Infracciones__Fecha">
-                        <C>
-ASC                        </C>
-                    </fecha>
-                    <lugar origName="Infracciones__lugar">
-                        <C>
-ASC                        </C>
-                    </lugar>
-                </columns>
-            </tbl>
-            <tbl>
-                <infracciones_by_placa3/>
-                <columns>
-                    <infracciones_placa origName="Infracciones__Placa">
-                        <K/>
-                        <NOCLUST/>
-                    </infracciones_placa>
-                    <velocidad origName="Infracciones__Velocidad">
-                        <C>
-ASC                        </C>
-                    </velocidad>
-                    <fecha origName="Infracciones__Fecha">
-                        <C>
-ASC                        </C>
-                    </fecha>
-                    <lugar origName="Infracciones__lugar">
-                        <C>
-ASC                        </C>
-                    </lugar>
-                </columns>
-            </tbl>
-        </Q1>
-        <Q2 qTemplate="SELECT |s|Infracciones__lugar|e| FROM |s|tableName|e| WHERE |s|Infracciones__Fecha|e|=? and |s|Infracciones__Placa|e|=?;">
-            <tbl>
-                <infracciones_by_fecha/>
-                <columns>
-                    <fecha origName="Infracciones__Fecha">
-                        <K/>
-                        <NOCLUST/>
-                    </fecha>
-                    <infracciones_placa origName="Infracciones__Placa">
-                        <K/>
-                        <NOCLUST/>
-                    </infracciones_placa>
-                    <lugar origName="Infracciones__lugar">
-                        <CNT/>
-                        <NOCLUST/>
-                    </lugar>
-                </columns>
-            </tbl>
-            <tbl>
-                <infracciones_by_fecha1/>
-                <columns>
-                    <infracciones_placa origName="Infracciones__Placa">
-                        <K/>
-                        <NOCLUST/>
-                    </infracciones_placa>
-                    <fecha origName="Infracciones__Fecha">
-                        <K/>
-                        <NOCLUST/>
-                    </fecha>
-                    <lugar origName="Infracciones__lugar">
-                        <CNT/>
-                        <NOCLUST/>
-                    </lugar>
-                </columns>
-            </tbl>
-            <tbl>
-                <infracciones_by_fecha2/>
-                <columns>
-                    <fecha origName="Infracciones__Fecha">
-                        <K/>
-                        <NOCLUST/>
-                    </fecha>
-                    <infracciones_placa origName="Infracciones__Placa">
-                        <C>
-ASC                        </C>
-                    </infracciones_placa>
-                    <lugar origName="Infracciones__lugar">
-                        <CNT/>
-                        <NOCLUST/>
-                    </lugar>
-                </columns>
-            </tbl>
-            <tbl>
-                <infracciones_by_fecha3/>
-                <columns>
-                    <infracciones_placa origName="Infracciones__Placa">
-                        <K/>
-                        <NOCLUST/>
-                    </infracciones_placa>
-                    <fecha origName="Infracciones__Fecha">
-                        <C>
-ASC                        </C>
-                    </fecha>
-                    <lugar origName="Infracciones__lugar">
-                        <CNT/>
-                        <NOCLUST/>
-                    </lugar>
-                </columns>
-            </tbl>
-        </Q2>
-        <Q3 qTemplate="SELECT |s|Infracciones__Velocidad|e|, |s|Infracciones__lugar|e|, |s|Infracciones__Fecha|e|, |s|Infracciones__Placa|e| FROM |s|tableName|e| WHERE |s|Vehiculos__cedula|e|=? and |s|Infracciones__Velocidad|e|&gt;?;">
-            <tbl>
-                <infraccioness_by_vehiculos/>
-                <columns>
-                    <cedula origName="Vehiculos__cedula">
-                        <K/>
-                        <NOCLUST/>
-                    </cedula>
-                    <velocidad origName="Infracciones__Velocidad">
-                        <C>
-ASC                        </C>
-                    </velocidad>
-                    <lugar origName="Infracciones__lugar">
-                        <C>
-ASC                        </C>
-                    </lugar>
-                    <fecha origName="Infracciones__Fecha">
-                        <C>
-ASC                        </C>
-                    </fecha>
-                    <infracciones_placa origName="Infracciones__Placa">
-                        <C>
-ASC                        </C>
-                    </infracciones_placa>
-                </columns>
-            </tbl>
-            <tbl>
-                <infraccioness_by_vehiculos1/>
-                <columns>
-                    <cedula origName="Vehiculos__cedula">
-                        <K/>
-                        <NOCLUST/>
-                    </cedula>
-                    <velocidad origName="Infracciones__Velocidad">
-                        <C>
-ASC                        </C>
-                    </velocidad>
-                    <lugar origName="Infracciones__lugar">
-                        <C>
-ASC                        </C>
-                    </lugar>
-                    <infracciones_placa origName="Infracciones__Placa">
-                        <C>
-ASC                        </C>
-                    </infracciones_placa>
-                    <fecha origName="Infracciones__Fecha">
-                        <C>
-ASC                        </C>
-                    </fecha>
-                </columns>
-            </tbl>
-            <tbl>
-                <infraccioness_by_vehiculos2/>
-                <columns>
-                    <cedula origName="Vehiculos__cedula">
-                        <K/>
-                        <NOCLUST/>
-                    </cedula>
-                    <velocidad origName="Infracciones__Velocidad">
-                        <C>
-ASC                        </C>
-                    </velocidad>
-                    <infracciones_placa origName="Infracciones__Placa">
-                        <C>
-ASC                        </C>
-                    </infracciones_placa>
-                    <lugar origName="Infracciones__lugar">
-                        <C>
-ASC                        </C>
-                    </lugar>
-                    <fecha origName="Infracciones__Fecha">
-                        <C>
-ASC                        </C>
-                    </fecha>
-                </columns>
-            </tbl>
-            <tbl>
-                <infraccioness_by_vehiculos3/>
-                <columns>
-                    <cedula origName="Vehiculos__cedula">
-                        <K/>
-                        <NOCLUST/>
-                    </cedula>
-                    <velocidad origName="Infracciones__Velocidad">
-                        <C>
-ASC                        </C>
-                    </velocidad>
-                    <infracciones_placa origName="Infracciones__Placa">
-                        <C>
-ASC                        </C>
-                    </infracciones_placa>
-                    <fecha origName="Infracciones__Fecha">
-                        <C>
-ASC                        </C>
-                    </fecha>
-                    <lugar origName="Infracciones__lugar">
-                        <C>
-ASC                        </C>
-                    </lugar>
-                </columns>
-            </tbl>
-            <tbl>
-                <infraccioness_by_vehiculos4/>
-                <columns>
-                    <cedula origName="Vehiculos__cedula">
-                        <K/>
-                        <NOCLUST/>
-                    </cedula>
-                    <velocidad origName="Infracciones__Velocidad">
-                        <C>
-ASC                        </C>
-                    </velocidad>
-                    <fecha origName="Infracciones__Fecha">
-                        <C>
-ASC                        </C>
-                    </fecha>
-                    <infracciones_placa origName="Infracciones__Placa">
-                        <C>
-ASC                        </C>
-                    </infracciones_placa>
-                    <lugar origName="Infracciones__lugar">
-                        <C>
-ASC                        </C>
-                    </lugar>
-                </columns>
-            </tbl>
-            <tbl>
-                <infraccioness_by_vehiculos5/>
-                <columns>
-                    <cedula origName="Vehiculos__cedula">
-                        <K/>
-                        <NOCLUST/>
-                    </cedula>
-                    <velocidad origName="Infracciones__Velocidad">
-                        <C>
-ASC                        </C>
-                    </velocidad>
-                    <fecha origName="Infracciones__Fecha">
-                        <C>
-ASC                        </C>
-                    </fecha>
-                    <lugar origName="Infracciones__lugar">
-                        <C>
-ASC                        </C>
-                    </lugar>
-                    <infracciones_placa origName="Infracciones__Placa">
-                        <C>
-ASC                        </C>
-                    </infracciones_placa>
-                </columns>
-            </tbl>
-        </Q3>
-        <Q4 qTemplate="SELECT |s|Infracciones__Fecha|e|, |s|Infracciones__Placa|e|, |s|Infracciones__Velocidad|e| FROM |s|tableName|e| WHERE |s|Infracciones__lugar|e|=? and |s|Infracciones__Fecha|e|=?;">
-            <tbl>
-                <infracciones_by_lugar/>
-                <columns>
-                    <lugar origName="Infracciones__lugar">
-                        <K/>
-                        <NOCLUST/>
-                    </lugar>
-                    <fecha origName="Infracciones__Fecha">
-                        <K/>
-                        <NOCLUST/>
-                    </fecha>
-                    <infracciones_placa origName="Infracciones__Placa">
-                        <C>
-ASC                        </C>
-                    </infracciones_placa>
-                    <velocidad origName="Infracciones__Velocidad"/>
-                </columns>
-            </tbl>
-            <tbl>
-                <infracciones_by_lugar1/>
-                <columns>
-                    <fecha origName="Infracciones__Fecha">
-                        <K/>
-                        <NOCLUST/>
-                    </fecha>
-                    <lugar origName="Infracciones__lugar">
-                        <K/>
-                        <NOCLUST/>
-                    </lugar>
-                    <infracciones_placa origName="Infracciones__Placa">
-                        <C>
-ASC                        </C>
-                    </infracciones_placa>
-                    <velocidad origName="Infracciones__Velocidad"/>
-                </columns>
-            </tbl>
-            <tbl>
-                <infracciones_by_lugar2/>
-                <columns>
-                    <lugar origName="Infracciones__lugar">
-                        <K/>
-                        <NOCLUST/>
-                    </lugar>
-                    <fecha origName="Infracciones__Fecha">
-                        <C>
-ASC                        </C>
-                    </fecha>
-                    <infracciones_placa origName="Infracciones__Placa">
-                        <C>
-ASC                        </C>
-                    </infracciones_placa>
-                    <velocidad origName="Infracciones__Velocidad"/>
-                </columns>
-            </tbl>
-            <tbl>
-                <infracciones_by_lugar3/>
-                <columns>
-                    <fecha origName="Infracciones__Fecha">
-                        <K/>
-                        <NOCLUST/>
-                    </fecha>
-                    <lugar origName="Infracciones__lugar">
-                        <C>
-ASC                        </C>
-                    </lugar>
-                    <infracciones_placa origName="Infracciones__Placa">
-                        <C>
-ASC                        </C>
-                    </infracciones_placa>
-                    <velocidad origName="Infracciones__Velocidad"/>
-                </columns>
-            </tbl>
-        </Q4>
-        <Q5 qTemplate="SELECT |s|Infracciones__Fecha|e|, |s|Infracciones__lugar|e|, |s|Infracciones__Placa|e| FROM |s|tableName|e| WHERE |s|Infracciones__Fecha|e|=? and |s|Infracciones__Velocidad|e|&gt;?;">
-            <tbl>
-                <infracciones_by_fecha0/>
-                <columns>
-                    <fecha origName="Infracciones__Fecha">
-                        <K/>
-                        <NOCLUST/>
-                    </fecha>
-                    <velocidad origName="Infracciones__Velocidad">
-                        <C>
-ASC                        </C>
-                    </velocidad>
-                    <lugar origName="Infracciones__lugar">
-                        <C>
-ASC                        </C>
-                    </lugar>
-                    <infracciones_placa origName="Infracciones__Placa">
-                        <C>
-ASC                        </C>
-                    </infracciones_placa>
-                </columns>
-            </tbl>
-            <tbl>
-                <infracciones_by_fecha4/>
-                <columns>
-                    <fecha origName="Infracciones__Fecha">
-                        <K/>
-                        <NOCLUST/>
-                    </fecha>
-                    <velocidad origName="Infracciones__Velocidad">
-                        <C>
-ASC                        </C>
-                    </velocidad>
-                    <infracciones_placa origName="Infracciones__Placa">
-                        <C>
-ASC                        </C>
-                    </infracciones_placa>
-                    <lugar origName="Infracciones__lugar">
-                        <C>
-ASC                        </C>
-                    </lugar>
-                </columns>
-            </tbl>
-        </Q5>
-        <Q6 qTemplate="SELECT |s|Personas__Cedula|e|, |s|Personas__Nombre|e|, |s|Personas__Telefono|e| FROM |s|tableName|e| WHERE |s|Infracciones__Placa|e|=? and |s|Infracciones__Velocidad|e|&gt;?;">
-            <tbl>
-                <personass_by_infracciones/>
-                <columns>
-                    <infracciones_placa origName="Infracciones__Placa">
-                        <K/>
-                        <NOCLUST/>
-                    </infracciones_placa>
-                    <velocidad origName="Infracciones__Velocidad">
-                        <C>
-ASC                        </C>
-                    </velocidad>
-                    <lugar origName="Infracciones__lugar">
-                        <C>
-ASC                        </C>
-                    </lugar>
-                    <fecha origName="Infracciones__Fecha">
-                        <C>
-ASC                        </C>
-                    </fecha>
-                    <cedula origName="Personas__Cedula"/>
-                    <nombre origName="Personas__Nombre"/>
-                    <telefono origName="Personas__Telefono">
-                        <COLL/>
-                        <NOCLUST/>
-                    </telefono>
-                </columns>
-            </tbl>
-            <tbl>
-                <personass_by_infracciones1/>
-                <columns>
-                    <infracciones_placa origName="Infracciones__Placa">
-                        <K/>
-                        <NOCLUST/>
-                    </infracciones_placa>
-                    <velocidad origName="Infracciones__Velocidad">
-                        <C>
-ASC                        </C>
-                    </velocidad>
-                    <fecha origName="Infracciones__Fecha">
-                        <C>
-ASC                        </C>
-                    </fecha>
-                    <lugar origName="Infracciones__lugar">
-                        <C>
-ASC                        </C>
-                    </lugar>
-                    <cedula origName="Personas__Cedula"/>
-                    <nombre origName="Personas__Nombre"/>
-                    <telefono origName="Personas__Telefono">
-                        <COLL/>
-                        <NOCLUST/>
-                    </telefono>
-                </columns>
-            </tbl>
-        </Q6>
-      <LOGICAL_CONFIGEL>
-{"infracciones_by_placa3":"","infracciones_by_fecha3":"","infraccioness_by_vehiculos":"","infracciones_by_lugar":"","infracciones_by_fecha0":"","personass_by_infracciones":""}    </LOGICAL_CONFIGEL>
+    <Q1 qTemplate="SELECT |s|Infracciones__Fecha|e|, |s|Infracciones__lugar|e| FROM |s|tableName|e| WHERE |s|Infracciones__Placa|e|=? and |s|Infracciones__Velocidad|e|=? and |s|Infracciones__Fecha|e|&gt;?;">
+      <tbl>
+        <infracciones_by_placa/>
+        <columns>
+          <infracciones_placa origName="Infracciones__Placa">
+            <K/>
+            <NOCLUST/>
+          </infracciones_placa>
+          <velocidad origName="Infracciones__Velocidad">
+            <K/>
+            <NOCLUST/>
+          </velocidad>
+          <fecha origName="Infracciones__Fecha">
+            <C>
+ASC            </C>
+          </fecha>
+          <lugar origName="Infracciones__lugar">
+            <C>
+ASC            </C>
+          </lugar>
+        </columns>
+      </tbl>
+      <tbl>
+        <infracciones_by_placa1/>
+        <columns>
+          <velocidad origName="Infracciones__Velocidad">
+            <K/>
+            <NOCLUST/>
+          </velocidad>
+          <infracciones_placa origName="Infracciones__Placa">
+            <K/>
+            <NOCLUST/>
+          </infracciones_placa>
+          <fecha origName="Infracciones__Fecha">
+            <C>
+ASC            </C>
+          </fecha>
+          <lugar origName="Infracciones__lugar">
+            <C>
+ASC            </C>
+          </lugar>
+        </columns>
+      </tbl>
+      <tbl>
+        <infracciones_by_placa2/>
+        <columns>
+          <infracciones_placa origName="Infracciones__Placa">
+            <K/>
+            <NOCLUST/>
+          </infracciones_placa>
+          <velocidad origName="Infracciones__Velocidad">
+            <C>
+ASC            </C>
+          </velocidad>
+          <fecha origName="Infracciones__Fecha">
+            <C>
+ASC            </C>
+          </fecha>
+          <lugar origName="Infracciones__lugar">
+            <C>
+ASC            </C>
+          </lugar>
+        </columns>
+      </tbl>
+      <tbl>
+        <infracciones_by_placa3/>
+        <columns>
+          <velocidad origName="Infracciones__Velocidad">
+            <K/>
+            <NOCLUST/>
+          </velocidad>
+          <infracciones_placa origName="Infracciones__Placa">
+            <C>
+ASC            </C>
+          </infracciones_placa>
+          <fecha origName="Infracciones__Fecha">
+            <C>
+ASC            </C>
+          </fecha>
+          <lugar origName="Infracciones__lugar">
+            <C>
+ASC            </C>
+          </lugar>
+        </columns>
+      </tbl>
+    </Q1>
+    <Q2 qTemplate="SELECT |s|Infracciones__lugar|e| FROM |s|tableName|e| WHERE |s|Infracciones__Fecha|e|=? and |s|Infracciones__Placa|e|=?;">
+      <tbl>
+        <infracciones_by_fecha/>
+        <columns>
+          <fecha origName="Infracciones__Fecha">
+            <K/>
+            <NOCLUST/>
+          </fecha>
+          <infracciones_placa origName="Infracciones__Placa">
+            <K/>
+            <NOCLUST/>
+          </infracciones_placa>
+          <lugar origName="Infracciones__lugar">
+            <C>
+ASC            </C>
+          </lugar>
+        </columns>
+      </tbl>
+      <tbl>
+        <infracciones_by_fecha1/>
+        <columns>
+          <infracciones_placa origName="Infracciones__Placa">
+            <K/>
+            <NOCLUST/>
+          </infracciones_placa>
+          <fecha origName="Infracciones__Fecha">
+            <K/>
+            <NOCLUST/>
+          </fecha>
+          <lugar origName="Infracciones__lugar">
+            <C>
+ASC            </C>
+          </lugar>
+        </columns>
+      </tbl>
+      <tbl>
+        <infracciones_by_fecha2/>
+        <columns>
+          <fecha origName="Infracciones__Fecha">
+            <K/>
+            <NOCLUST/>
+          </fecha>
+          <infracciones_placa origName="Infracciones__Placa">
+            <C>
+ASC            </C>
+          </infracciones_placa>
+          <lugar origName="Infracciones__lugar">
+            <C>
+ASC            </C>
+          </lugar>
+        </columns>
+      </tbl>
+      <tbl>
+        <infracciones_by_fecha3/>
+        <columns>
+          <infracciones_placa origName="Infracciones__Placa">
+            <K/>
+            <NOCLUST/>
+          </infracciones_placa>
+          <fecha origName="Infracciones__Fecha">
+            <C>
+ASC            </C>
+          </fecha>
+          <lugar origName="Infracciones__lugar">
+            <C>
+ASC            </C>
+          </lugar>
+        </columns>
+      </tbl>
+    </Q2>
+    <Q3 qTemplate="SELECT |s|Infracciones__Velocidad|e|, |s|Infracciones__lugar|e|, |s|Infracciones__Fecha|e|, |s|Infracciones__Placa|e| FROM |s|tableName|e| WHERE |s|Vehiculos__cedula|e|=? and |s|Infracciones__Velocidad|e|&gt;?;">
+      <tbl>
+        <infraccioness_by_vehiculos/>
+        <columns>
+          <cedula origName="Vehiculos__cedula">
+            <K/>
+            <NOCLUST/>
+          </cedula>
+          <velocidad origName="Infracciones__Velocidad">
+            <C>
+ASC            </C>
+          </velocidad>
+          <lugar origName="Infracciones__lugar">
+            <C>
+ASC            </C>
+          </lugar>
+          <fecha origName="Infracciones__Fecha">
+            <C>
+ASC            </C>
+          </fecha>
+          <infracciones_placa origName="Infracciones__Placa">
+            <C>
+ASC            </C>
+          </infracciones_placa>
+        </columns>
+      </tbl>
+      <tbl>
+        <infraccioness_by_vehiculos1/>
+        <columns>
+          <cedula origName="Vehiculos__cedula">
+            <K/>
+            <NOCLUST/>
+          </cedula>
+          <velocidad origName="Infracciones__Velocidad">
+            <C>
+ASC            </C>
+          </velocidad>
+          <lugar origName="Infracciones__lugar">
+            <C>
+ASC            </C>
+          </lugar>
+          <infracciones_placa origName="Infracciones__Placa">
+            <C>
+ASC            </C>
+          </infracciones_placa>
+          <fecha origName="Infracciones__Fecha">
+            <C>
+ASC            </C>
+          </fecha>
+        </columns>
+      </tbl>
+      <tbl>
+        <infraccioness_by_vehiculos2/>
+        <columns>
+          <cedula origName="Vehiculos__cedula">
+            <K/>
+            <NOCLUST/>
+          </cedula>
+          <velocidad origName="Infracciones__Velocidad">
+            <C>
+ASC            </C>
+          </velocidad>
+          <infracciones_placa origName="Infracciones__Placa">
+            <C>
+ASC            </C>
+          </infracciones_placa>
+          <lugar origName="Infracciones__lugar">
+            <C>
+ASC            </C>
+          </lugar>
+          <fecha origName="Infracciones__Fecha">
+            <C>
+ASC            </C>
+          </fecha>
+        </columns>
+      </tbl>
+      <tbl>
+        <infraccioness_by_vehiculos3/>
+        <columns>
+          <cedula origName="Vehiculos__cedula">
+            <K/>
+            <NOCLUST/>
+          </cedula>
+          <velocidad origName="Infracciones__Velocidad">
+            <C>
+ASC            </C>
+          </velocidad>
+          <infracciones_placa origName="Infracciones__Placa">
+            <C>
+ASC            </C>
+          </infracciones_placa>
+          <fecha origName="Infracciones__Fecha">
+            <C>
+ASC            </C>
+          </fecha>
+          <lugar origName="Infracciones__lugar">
+            <C>
+ASC            </C>
+          </lugar>
+        </columns>
+      </tbl>
+      <tbl>
+        <infraccioness_by_vehiculos4/>
+        <columns>
+          <cedula origName="Vehiculos__cedula">
+            <K/>
+            <NOCLUST/>
+          </cedula>
+          <velocidad origName="Infracciones__Velocidad">
+            <C>
+ASC            </C>
+          </velocidad>
+          <fecha origName="Infracciones__Fecha">
+            <C>
+ASC            </C>
+          </fecha>
+          <infracciones_placa origName="Infracciones__Placa">
+            <C>
+ASC            </C>
+          </infracciones_placa>
+          <lugar origName="Infracciones__lugar">
+            <C>
+ASC            </C>
+          </lugar>
+        </columns>
+      </tbl>
+      <tbl>
+        <infraccioness_by_vehiculos5/>
+        <columns>
+          <cedula origName="Vehiculos__cedula">
+            <K/>
+            <NOCLUST/>
+          </cedula>
+          <velocidad origName="Infracciones__Velocidad">
+            <C>
+ASC            </C>
+          </velocidad>
+          <fecha origName="Infracciones__Fecha">
+            <C>
+ASC            </C>
+          </fecha>
+          <lugar origName="Infracciones__lugar">
+            <C>
+ASC            </C>
+          </lugar>
+          <infracciones_placa origName="Infracciones__Placa">
+            <C>
+ASC            </C>
+          </infracciones_placa>
+        </columns>
+      </tbl>
+    </Q3>
+    <Q4 qTemplate="SELECT |s|Infracciones__Fecha|e|, |s|Infracciones__Placa|e|, |s|Infracciones__Velocidad|e| FROM |s|tableName|e| WHERE |s|Infracciones__lugar|e|=? and |s|Infracciones__Fecha|e|=?;">
+      <tbl>
+        <infracciones_by_lugar/>
+        <columns>
+          <lugar origName="Infracciones__lugar">
+            <K/>
+            <NOCLUST/>
+          </lugar>
+          <fecha origName="Infracciones__Fecha">
+            <K/>
+            <NOCLUST/>
+          </fecha>
+          <infracciones_placa origName="Infracciones__Placa">
+            <C>
+ASC            </C>
+          </infracciones_placa>
+          <velocidad origName="Infracciones__Velocidad"/>
+        </columns>
+      </tbl>
+      <tbl>
+        <infracciones_by_lugar1/>
+        <columns>
+          <fecha origName="Infracciones__Fecha">
+            <K/>
+            <NOCLUST/>
+          </fecha>
+          <lugar origName="Infracciones__lugar">
+            <K/>
+            <NOCLUST/>
+          </lugar>
+          <infracciones_placa origName="Infracciones__Placa">
+            <C>
+ASC            </C>
+          </infracciones_placa>
+          <velocidad origName="Infracciones__Velocidad"/>
+        </columns>
+      </tbl>
+      <tbl>
+        <infracciones_by_lugar2/>
+        <columns>
+          <lugar origName="Infracciones__lugar">
+            <K/>
+            <NOCLUST/>
+          </lugar>
+          <fecha origName="Infracciones__Fecha">
+            <C>
+ASC            </C>
+          </fecha>
+          <infracciones_placa origName="Infracciones__Placa">
+            <C>
+ASC            </C>
+          </infracciones_placa>
+          <velocidad origName="Infracciones__Velocidad"/>
+        </columns>
+      </tbl>
+      <tbl>
+        <infracciones_by_lugar3/>
+        <columns>
+          <fecha origName="Infracciones__Fecha">
+            <K/>
+            <NOCLUST/>
+          </fecha>
+          <lugar origName="Infracciones__lugar">
+            <C>
+ASC            </C>
+          </lugar>
+          <infracciones_placa origName="Infracciones__Placa">
+            <C>
+ASC            </C>
+          </infracciones_placa>
+          <velocidad origName="Infracciones__Velocidad"/>
+        </columns>
+      </tbl>
+    </Q4>
+    <Q5 qTemplate="SELECT |s|Infracciones__Fecha|e|, |s|Infracciones__lugar|e|, |s|Infracciones__Placa|e| FROM |s|tableName|e| WHERE |s|Infracciones__Fecha|e|=? and |s|Infracciones__Velocidad|e|&gt;?;">
+      <tbl>
+        <infracciones_by_fecha0/>
+        <columns>
+          <fecha origName="Infracciones__Fecha">
+            <K/>
+            <NOCLUST/>
+          </fecha>
+          <velocidad origName="Infracciones__Velocidad">
+            <C>
+ASC            </C>
+          </velocidad>
+          <lugar origName="Infracciones__lugar">
+            <C>
+ASC            </C>
+          </lugar>
+          <infracciones_placa origName="Infracciones__Placa">
+            <C>
+ASC            </C>
+          </infracciones_placa>
+        </columns>
+      </tbl>
+      <tbl>
+        <infracciones_by_fecha4/>
+        <columns>
+          <fecha origName="Infracciones__Fecha">
+            <K/>
+            <NOCLUST/>
+          </fecha>
+          <velocidad origName="Infracciones__Velocidad">
+            <C>
+ASC            </C>
+          </velocidad>
+          <infracciones_placa origName="Infracciones__Placa">
+            <C>
+ASC            </C>
+          </infracciones_placa>
+          <lugar origName="Infracciones__lugar">
+            <C>
+ASC            </C>
+          </lugar>
+        </columns>
+      </tbl>
+    </Q5>
+    <Q6 qTemplate="SELECT |s|Personas__Cedula|e|, |s|Personas__Nombre|e|, |s|Personas__Telefono|e| FROM |s|tableName|e| WHERE |s|Infracciones__Placa|e|=? and |s|Infracciones__Velocidad|e|&gt;?;">
+      <tbl>
+        <personass_by_infracciones/>
+        <columns>
+          <infracciones_placa origName="Infracciones__Placa">
+            <K/>
+            <NOCLUST/>
+          </infracciones_placa>
+          <velocidad origName="Infracciones__Velocidad">
+            <C>
+ASC            </C>
+          </velocidad>
+          <lugar origName="Infracciones__lugar">
+            <C>
+ASC            </C>
+          </lugar>
+          <fecha origName="Infracciones__Fecha">
+            <C>
+ASC            </C>
+          </fecha>
+          <cedula origName="Personas__Cedula"/>
+          <nombre origName="Personas__Nombre"/>
+          <telefono origName="Personas__Telefono">
+            <COLL/>
+            <NOCLUST/>
+          </telefono>
+        </columns>
+      </tbl>
+      <tbl>
+        <personass_by_infracciones1/>
+        <columns>
+          <infracciones_placa origName="Infracciones__Placa">
+            <K/>
+            <NOCLUST/>
+          </infracciones_placa>
+          <velocidad origName="Infracciones__Velocidad">
+            <C>
+ASC            </C>
+          </velocidad>
+          <fecha origName="Infracciones__Fecha">
+            <C>
+ASC            </C>
+          </fecha>
+          <lugar origName="Infracciones__lugar">
+            <C>
+ASC            </C>
+          </lugar>
+          <cedula origName="Personas__Cedula"/>
+          <nombre origName="Personas__Nombre"/>
+          <telefono origName="Personas__Telefono">
+            <COLL/>
+            <NOCLUST/>
+          </telefono>
+        </columns>
+      </tbl>
+    </Q6>
+    <LOGICAL_CONFIGEL>
+{"infracciones_by_placa2":"","infracciones_by_fecha3":"","infraccioness_by_vehiculos":"","infracciones_by_lugar":"","infracciones_by_fecha0":"","personass_by_infracciones":""}    </LOGICAL_CONFIGEL>
   </LOGICAL_MODEL>
   <PHYSICAL_MODEL>
-{"0":{"listOfInputs":"infracciones_by_placa,infracciones_placa,velocidad,fecha,lugar","listOfSelectValues":"TEXT,K,INT,cup,TIMESTAMP,cup,INT,cup"},"1":{"listOfInputs":"estadistica_mensual,infracciones_placa,fecha,lugar","listOfSelectValues":"TEXT,K,TEXT,cup,COUNTER,"},"2":{"listOfInputs":"infracciones_by_cedula,cedula,velocidad,lugar,fecha,infracciones_placa","listOfSelectValues":"INT,K,INT,cup,INT,cup,TIMESTAMP,cup,TEXT,cup"},"3":{"listOfInputs":"infracciones_by_lugar,lugar,fecha,infracciones_placa,velocidad","listOfSelectValues":"INT,K,TIMESTAMP,K,TEXT,cup,INT,"},"4":{"listOfInputs":"infracciones_by_fecha,fecha,velocidad,lugar,infracciones_placa","listOfSelectValues":"TIMESTAMP,K,TEXT,cup,TEXT,cup,TEXT,cup"},"5":{"listOfInputs":"personas_by_placa,infracciones_placa,velocidad,lugar,fecha,cedula,nombre,telefono","listOfSelectValues":"TEXT,K,INT,cup,INT,cup,TIMESTAMP,cup,INT,,TEXT,,SET,INT,"},"highlightedTables":["infracciones_by_placa3","infracciones_by_fecha3","infraccioness_by_vehiculos","infracciones_by_lugar","infracciones_by_fecha0","personass_by_infracciones"]}  </PHYSICAL_MODEL>
+{"0":{"listOfInputs":"infracciones_by_placa,infracciones_placa,fecha,velocidad,lugar","listOfSelectValues":"TEXT,K,TIMESTAMP,cup,INT,cup,INT,cup"},"1":{"listOfInputs":"estadistica_mensual,infracciones_placa,fecha,lugar","listOfSelectValues":"TEXT,K,TIMESTAMP,cup,INT,cup"},"2":{"listOfInputs":"infracciones_by_cedula,cedula,velocidad,lugar,fecha,infracciones_placa","listOfSelectValues":"INT,K,INT,cup,INT,cup,TIMESTAMP,cup,TEXT,cup"},"3":{"listOfInputs":"infracciones_by_lugar,lugar,fecha,infracciones_placa,velocidad","listOfSelectValues":"INT,K,TIMESTAMP,K,TEXT,cup,INT,"},"4":{"listOfInputs":"infracciones_by_fecha,fecha,velocidad,lugar,infracciones_placa","listOfSelectValues":"TIMESTAMP,K,INT,cup,INT,cup,TEXT,cup"},"5":{"listOfInputs":"personas_by_placa,infracciones_placa,velocidad,lugar,fecha,cedula,nombre,telefono","listOfSelectValues":"TEXT,K,INT,cup,INT,cup,TIMESTAMP,cup,INT,,TEXT,,SET,INT,"},"highlightedTables":["infracciones_by_placa2","infracciones_by_fecha3","infraccioness_by_vehiculos","infracciones_by_lugar","infracciones_by_fecha0","personass_by_infracciones"]}  </PHYSICAL_MODEL>
 </KDMPROJECT>
