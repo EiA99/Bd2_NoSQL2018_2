@@ -1,0 +1,42 @@
+/*Tabla lugares*/
+
+insert  into `lugares`(`IdLugar`,`Ubicacion`) values 
+(0,'aranjuez'),
+(1,'regional'),
+(2,'poblado'),
+(3,'sevilla'),
+(4,'blanquizal'),
+(5,'bello'),
+(6,'girardota'),
+(7,'copacabana'),
+(8,'barbosa')
+(9,'belen'); 
+
+/*Tabla personas*/
+
+insert  into `personas`(`Cedula`,`Nombre`,`Telefono`) values 
+(159,'pepe','2509630'),
+(175,'alirio','8796347'),
+(178,'juan','8509630'),
+(489,'casimiro','4589632'),
+(693,'aquiles','8963017'),
+(789,'gabriel','3560476');
+
+/*Tabla vehiculos */
+
+insert  into `vehiculos`(`Placa`,`CedulaDuenho`) values 
+('AAA111',159),
+('AAA222',159),
+('AAA333',159),
+('AAA444',175),
+('AAA555',175),
+('BBB111',175),
+('BBB222',178),
+('BBB333',178),
+('BBB444',178),
+('BBB555',489),
+('CCC111',489),
+('CCC222',489),
+('CCC333',693),
+('CCC444',693),
+('CCC555',693);

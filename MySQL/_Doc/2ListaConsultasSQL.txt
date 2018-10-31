@@ -1,0 +1,47 @@
+/*----------------------------------------------Q1-----------------------------------------------------*/
+Q1: Dada el vehículo(placas) Y rango de fechas, se puede consultar las infracciones (mas de 80km). Listando fecha, hora, lugar
+
+SELECT Fecha, IdLugar  
+          FROM infracciones
+          WHERE Placa = '$placa'
+            AND Velocidad > 80
+            AND Fecha > $fechaI_TSP
+            AND Fecha < $fechaF_TSP
+          ORDER BY Fecha ASC ";
+
+ /*----------------------------------------------Q2-----------------------------------------------------*/
+ Q2: Dada el año, mes Y el vehículo(placas), se puede consultar las estadísticas de total de pasos por cada lugar. Listando lugar Y número de pasadas (Note que este es un consolidado mensual)       
+
+ /*----------------------------------------------Q3-----------------------------------------------------*/   
+Q3: Dada una cedula consultar las infracciones
+
+ SELECT fecha, placa, velocidad, idLugar
+          FROM infracciones
+          WHERE placa IN( SELECT placa 
+		                  FROM vehiculos
+		                  WHERE ceduladuenho = $cedula)
+          AND velocidad >  80
+          ORDER BY fecha ASC";
+
+/*------------------------------------------------Q4-----------------------------------------------------*/	
+Q4: Dada una fecha Y lugar se puede consultar las horas del día, vehículo(placas) Y velocidad
+
+SELECT Fecha, Placa, Velocidad  
+          FROM infracciones
+          WHERE IdLugar = $lugar
+            AND Fecha > $fechaI_TSP
+            AND Fecha < $fechaF_TSP 
+          ORDER BY Fecha ASC
+
+/*------------------------------------------------Q5-----------------------------------------------------*/	
+Q5: Dado una fecha se puede consultar los vehículos(placas) que sobrepasaron 80km, listando hora del día, lugar Y placa.
+
+SELECT Fecha, IdLugar, Placa  
+          FROM infracciones
+          WHERE Velocidad > 80
+            AND Fecha > $fechaI_TSP
+            AND Fecha < $fechaF_TSP
+          ORDER BY Fecha ASC
+
+/*------------------------------------------------Q6-----------------------------------------------------*/
+Q6: Dada una placa consultar los datos del propietario del vehículo (Nombre, cedula).	                    

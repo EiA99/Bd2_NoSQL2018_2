@@ -34,7 +34,7 @@ div {
 	border-bottom: solid 1px #ccc;
 }
 
-/* button
+/* button 
 ---------------------------------------------- */
 .button {
 	display: inline-block;
@@ -49,7 +49,7 @@ div {
 	font: 14px/100% Arial, Helvetica, sans-serif;
 	padding: .5em 2em .55em;
 	text-shadow: 0 1px 1px rgba(0,0,0,.3);
-	-webkit-border-radius: .5em;
+	-webkit-border-radius: .5em; 
 	-moz-border-radius: .5em;
 	border-radius: .5em;
 	-webkit-box-shadow: 0 1px 2px rgba(0,0,0,.2);
@@ -112,12 +112,12 @@ div {
 <table>
 <tr><th colspan="3"><H1>Usuario</H1></th></tr>
 <tr>
-	<td><H3>Consulta Infracciones</H3></td><td>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</td><td><H3>Estadistica Mensual</H3></td><td>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</td><td><H3>Consulta por cedula</H3></td>
+	<td><H3>Consulta Infracciones</H3></td><td>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</td><td><H3>Estadistica Mensual</H3></td></td><td><H3>Total Infracciones</H3></td>
 </tr>
 <tr>
 	<td>
 		<!-- Consulta Infracciones - Recuerde cambiar la acción para llamar su programa -->
-		<form name="q1" action="">
+		<form name="q1" action="Q1.php" method="GET">
 		<table>
 		  <tr><td>Placa:</td><td><input type="text" name="placa" value="AAA111"  maxlength="6"></td></tr>
 		  <tr><td>Fecha desde:</td><td><input type="text" name="fedesde" value="2018/10/01"  maxlength="10"></td></tr>
@@ -129,7 +129,7 @@ div {
 	<td></td>
 	<td>
 		<!-- Estadistica Mensual - Recuerde cambiar la acción para llamar su programa -->
-		<form name="q2" action="">
+		<form name="q2" action="Q2.php" method ="GET">
 		<table>
 		  <tr><td>Año:</td><td><input type="text" name="anio" value="2018"  maxlength="4"></td></tr>
 		  <tr><td>Mes:</td><td><input type="text" name="mes" value="10"  maxlength="2"></td></tr>
@@ -138,13 +138,12 @@ div {
 		</table>  
 		</form>
 	</td>
-	<td></td>
 	<td>
-		<!-- Consulta por cedula - Recuerde cambiar la acción para llamar su programa -->
-		<form name="q3" action="">
+		<!-- Infracciones por usuario - Recuerde cambiar la acción para llamar su programa -->
+		<form name="q3" action="Q3.php" method ="GET">
 		<table>
-		  <tr><td>Cedula:</td><td><input type="number" name="cedula" value="1234567890"  maxlength="10"></td></tr>
-		  <tr><td colspan="2"><button class="button mi_color">Consulta por cedula</button></td></tr>
+		  <tr><td>Cedula:</td><td><input type="text" name="cedula" value="179"  maxlength="11"></td></tr>
+		  <tr><td colspan="2"><button class="button mi_color">Total Infracciones </button></td></tr>
 		</table>  
 		</form>
 	</td>
@@ -157,12 +156,12 @@ div {
 <table>
 <tr><th colspan="3"><H1>Agente del transito</H1></th></tr>
 <tr>
-	<td><H3>Consulta velocidades por sitio</H3></td><td>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</td><td><H3>Infracciones Velocidad</H3></td><td>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</td><td><H3>Datos propietario</H3></td>
+	<td><H3>Consulta velocidades por sitio</H3></td><td>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</td><td><H3>Infracciones Velocidad</H3></td>
 </tr>
 <tr>
 	<td>
 		<!-- Consulta velocidades por sitio - Recuerde cambiar la acción para llamar su programa -->
-		<form name="q4" action="">
+		<form name="q4" action="Q4.php" method ="GET">
 		<table>
 		  <tr><td>Fecha:</td><td><input type="text" name="fecha" value="2018/10/01"  maxlength="10"></td></tr>
 		  <tr><td>Lugar:</td><td><input type="text" name="lugar" value="1"  maxlength="1"></td></tr>
@@ -173,20 +172,10 @@ div {
 	<td></td>
 	<td>
 		<!-- Infracciones Velocidad - Recuerde cambiar la acción para llamar su programa -->
-		<form name="q5" action="">
+		<form name="q5" action="Q5.php" method ="GET">
 		<table>
 		  <tr><td>Fecha:</td><td><input type="text" name="fecha" value="2018/10/01"  maxlength="10"></td></tr>
 		  <tr><td colspan="2"><button class="button mi_color">Infracciones Velocidad</button></td></tr>
-		</table>  
-		</form>
-	</td>
-	<td></td>
-	<td>
-		<!-- Informacion del dueño del vehiculo - Recuerde cambiar la acción para llamar su programa -->
-		<form name="q6" action="">
-		<table>
-		  <tr><td>Placa:</td><td><input type="text" name="placa" value="AAA111"  maxlength="6"></td></tr>
-		  <tr><td colspan="2"><button class="button mi_color">Datos propietario</button></td></tr>
 		</table>  
 		</form>
 	</td>

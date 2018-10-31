@@ -14,28 +14,26 @@ $tiempo		= htmlspecialchars($_GET["tiempo"]);
 $velocidad	= htmlspecialchars($_GET["velocidad"]);
 
 /*Validación de argumentos*/
-/*
+
 echo 'lugar='. 		$lugar .'</br>';
 echo 'placa='. 		$placa .'</br>';
 echo 'tiempo='. 	$tiempo .'</br>';
 echo 'velocidad='. 	$velocidad;'</br>';
-*/
+
 
 /* ==--> Aqui ustede debe hacer la conexion a la base de datos*/
 /*
-// Create connection (Puerto, Usuario, Clave y base datos)
-$conn = new mysqli('localhost:3307', 'root', '','CAMBIAR_ESTE_NOMBRE');
-*/
+Create connection (Puerto, Usuario, Clave y base datos) */
+$conn = new mysqli('localhost:3306', 'root', '','mydb');
+$db = mysqli_select_db($conn, 'mydb');
 
 /* ==--> Se arma el Insert*/
-/*
-$sql = "INSERT INTO tabla (columnas...) VALUES( Valores...);";
-*/
+$sql = "INSERT INTO infracciones (Placa,IdLugar,Fecha,Velocidad) VALUES ('$placa','$lugar','$tiempo','$velocidad');";
 
 /* ==--> insertar el o los registros*/
-/*
 $conn->query($sql);
 $conn->close();
+
 /*retornar el texto con resultado*/
-echo "OK";
+echo 'es: ' .$db;
 ?>
