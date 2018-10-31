@@ -1,0 +1,897 @@
+<KDMPROJECT>
+  <ERMODEL>
+    <mxGraphModel grid="1" guides="1" tooltips="1" connect="1" fold="1" page="0" pageScale="1" pageWidth="826" pageHeight="1169">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        <mxCell id="56" value="Vehiculos" style="whiteSpace=wrap" vertex="1" parent="1">
+          <mxGeometry x="166" y="104" width="100" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="57" value="Involucrado" style="shape=card;whiteSpace=wrap" vertex="1" parent="1">
+          <mxGeometry x="336" y="96.5" width="130" height="65" as="geometry"/>
+        </mxCell>
+        <mxCell id="58" value="Personas" style="whiteSpace=wrap" vertex="1" parent="1">
+          <mxGeometry x="166" y="334" width="100" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="59" value="Matricula" style="shape=card;whiteSpace=wrap" vertex="1" parent="1">
+          <mxGeometry x="151" y="204" width="130" height="65" as="geometry"/>
+        </mxCell>
+        <mxCell id="60" value="1" style="entryX=0;entryY=0.5;entryPerimeter=0" edge="1" source="56" target="57" parent="1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="61" value="Placa" style="ellipse;fontStyle=4" vertex="1" parent="1">
+          <mxGeometry x="226" y="20" width="59" height="35" as="geometry"/>
+        </mxCell>
+        <mxCell id="62" style="entryX=0.75;entryY=0" edge="1" source="61" target="56" parent="1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="63" value="Placa" style="ellipse;fontStyle=4" vertex="1" parent="1">
+          <mxGeometry x="520" y="200" width="61" height="35" as="geometry"/>
+        </mxCell>
+        <mxCell id="64" value="Fecha" style="ellipse;fontStyle=4" vertex="1" parent="1">
+          <mxGeometry x="520" y="30" width="60" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="65" value="lugar" style="ellipse;fontStyle=4" vertex="1" parent="1">
+          <mxGeometry x="596" y="30" width="60" height="35" as="geometry"/>
+        </mxCell>
+        <mxCell id="66" value="Velocidad" style="ellipse;fontStyle=0" vertex="1" parent="1">
+          <mxGeometry x="596" y="200" width="69" height="35" as="geometry"/>
+        </mxCell>
+        <mxCell id="67" value="Cedula" style="ellipse;fontStyle=4" vertex="1" parent="1">
+          <mxGeometry x="90" y="419" width="80" height="35" as="geometry"/>
+        </mxCell>
+        <mxCell id="68" edge="1" source="67" target="58" parent="1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="69" value="Nombre" style="ellipse" vertex="1" parent="1">
+          <mxGeometry x="186" y="419" width="80" height="35" as="geometry"/>
+        </mxCell>
+        <mxCell id="70" edge="1" source="69" target="58" parent="1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="71" value="Telefono&#xa;" style="ellipse;shape=doubleEllipse;whiteSpace=wrap" vertex="1" parent="1">
+          <mxGeometry x="281" y="420" width="80" height="35" as="geometry"/>
+        </mxCell>
+        <mxCell id="72" edge="1" source="58" target="71" parent="1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="73" value="cedula" style="ellipse" vertex="1" parent="1">
+          <mxGeometry x="136" y="20" width="80" height="35" as="geometry"/>
+        </mxCell>
+        <mxCell id="74" style="exitX=0.25;exitY=0;entryX=0.5;entryY=1" edge="1" source="56" target="73" parent="1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="75" value="Infracciones" style="shape=cube;whiteSpace=wrap" vertex="1" parent="1">
+          <mxGeometry x="536" y="104" width="100" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="76" value="n" style="exitX=1;exitY=0.5;exitPerimeter=0;entryX=0;entryY=0.5" edge="1" source="57" target="75" parent="1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="77" style="exitX=0.5;exitY=0;entryX=0.25;entryY=1" edge="1" source="63" target="75" parent="1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="78" style="exitX=0.5;exitY=1;entryX=0.25;entryY=0" edge="1" source="64" target="75" parent="1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="79" style="exitX=0.5;exitY=1;entryX=0.75;entryY=0" edge="1" source="65" target="75" parent="1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="80" style="exitX=0.5;exitY=0;entryX=0.75;entryY=1" edge="1" source="66" target="75" parent="1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="81" value="n" style="exitX=0.5;exitY=0;exitPerimeter=0;entryX=0.5;entryY=1" edge="1" source="59" target="56" parent="1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="82" value="1" style="exitX=0.5;exitY=1;exitPerimeter=0;entryX=0.5;entryY=0" edge="1" source="59" target="58" parent="1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+    <KEYS_JSON>
+{}    </KEYS_JSON>
+  </ERMODEL>
+  <ACCESS_PATTERNS width="1150px" height="" left="189px" top="373px">
+    <Q1>
+      <APTYPE>
+simple      </APTYPE>
+      <GR>
+        <ATTRIBUTE>
+          <DIV>
+            <DIV>
+                          <DIV>
+Infracciones.Placa                                    </DIV>
+                      </DIV>
+          </DIV>
+        </ATTRIBUTE>
+        <VRS>
+value        </VRS>
+      </GR>
+      <GR>
+        <ATTRIBUTE>
+          <DIV>
+            <DIV>
+                          <DIV>
+Infracciones.Fecha                                    </DIV>
+                      </DIV>
+          </DIV>
+        </ATTRIBUTE>
+        <VRS>
+range        </VRS>
+      </GR>
+      <GR>
+        <ATTRIBUTE>
+          <DIV>
+            <DIV>
+                          <DIV>
+Infracciones.Velocidad                                    </DIV>
+                      </DIV>
+          </DIV>
+        </ATTRIBUTE>
+        <VRS>
+range        </VRS>
+      </GR>
+      <FR>
+        <ATTRIBUTE>
+          <DIV>
+            <DIV>
+Infracciones.Fecha                      </DIV>
+          </DIV>
+        </ATTRIBUTE>
+      </FR>
+      <FR>
+        <ATTRIBUTE>
+          <DIV>
+            <DIV>
+Infracciones.lugar                      </DIV>
+          </DIV>
+        </ATTRIBUTE>
+      </FR>
+    </Q1>
+    <Q2>
+      <APTYPE>
+simple      </APTYPE>
+      <GR>
+        <ATTRIBUTE>
+          <DIV>
+            <DIV>
+                          <DIV>
+Infracciones.Fecha                                    </DIV>
+                      </DIV>
+          </DIV>
+        </ATTRIBUTE>
+        <VRS>
+value        </VRS>
+      </GR>
+      <GR>
+        <ATTRIBUTE>
+          <DIV>
+            <DIV>
+                          <DIV>
+Infracciones.Placa                                    </DIV>
+                      </DIV>
+          </DIV>
+        </ATTRIBUTE>
+        <VRS>
+value        </VRS>
+      </GR>
+      <FR>
+        <ATTRIBUTE>
+          <DIV>
+Infracciones.lugar          </DIV>
+        </ATTRIBUTE>
+      </FR>
+    </Q2>
+    <Q3>
+      <APTYPE>
+simple      </APTYPE>
+      <GR>
+        <ATTRIBUTE>
+          <DIV>
+            <DIV>
+                          <DIV>
+Vehiculos.cedula                                    </DIV>
+                      </DIV>
+          </DIV>
+        </ATTRIBUTE>
+        <VRS>
+value        </VRS>
+      </GR>
+      <GR>
+        <ATTRIBUTE>
+          <DIV>
+            <DIV>
+                          <DIV>
+Infracciones.Velocidad                                    </DIV>
+                      </DIV>
+          </DIV>
+        </ATTRIBUTE>
+        <VRS>
+range        </VRS>
+      </GR>
+      <FR>
+        <ATTRIBUTE>
+          <DIV>
+            <DIV>
+Infracciones.Velocidad                      </DIV>
+          </DIV>
+        </ATTRIBUTE>
+      </FR>
+      <FR>
+        <ATTRIBUTE>
+          <DIV>
+            <DIV>
+Infracciones.Placa                      </DIV>
+          </DIV>
+        </ATTRIBUTE>
+      </FR>
+      <FR>
+        <ATTRIBUTE>
+          <DIV>
+            <DIV>
+Infracciones.lugar                      </DIV>
+          </DIV>
+        </ATTRIBUTE>
+      </FR>
+      <FR>
+        <ATTRIBUTE>
+          <DIV>
+            <DIV>
+Infracciones.Fecha                      </DIV>
+          </DIV>
+        </ATTRIBUTE>
+      </FR>
+    </Q3>
+    <Q4>
+      <APTYPE>
+simple      </APTYPE>
+      <GR>
+        <ATTRIBUTE>
+          <DIV>
+            <DIV>
+Infracciones.Fecha                      </DIV>
+          </DIV>
+        </ATTRIBUTE>
+        <VRS>
+value        </VRS>
+      </GR>
+      <GR>
+        <ATTRIBUTE>
+          <DIV>
+            <DIV>
+Infracciones.lugar                      </DIV>
+          </DIV>
+        </ATTRIBUTE>
+        <VRS>
+value        </VRS>
+      </GR>
+      <FR>
+        <ATTRIBUTE>
+          <DIV>
+            <DIV>
+                          <DIV>
+Infracciones.Fecha                                    </DIV>
+                      </DIV>
+          </DIV>
+        </ATTRIBUTE>
+      </FR>
+      <FR>
+        <ATTRIBUTE>
+          <DIV>
+            <DIV>
+                          <DIV>
+Infracciones.Placa                                    </DIV>
+                      </DIV>
+          </DIV>
+        </ATTRIBUTE>
+      </FR>
+      <FR>
+        <ATTRIBUTE>
+          <DIV>
+            <DIV>
+                          <DIV>
+Infracciones.Velocidad                                    </DIV>
+                      </DIV>
+          </DIV>
+        </ATTRIBUTE>
+      </FR>
+    </Q4>
+    <Q5>
+      <APTYPE>
+simple      </APTYPE>
+      <GR>
+        <ATTRIBUTE>
+          <DIV>
+            <DIV>
+                          <DIV>
+Infracciones.Fecha                                    </DIV>
+                      </DIV>
+          </DIV>
+        </ATTRIBUTE>
+        <VRS>
+value        </VRS>
+      </GR>
+      <GR>
+        <ATTRIBUTE>
+          <DIV>
+            <DIV>
+                          <DIV>
+Infracciones.Velocidad                                    </DIV>
+                      </DIV>
+          </DIV>
+        </ATTRIBUTE>
+        <VRS>
+range        </VRS>
+      </GR>
+      <FR>
+        <ATTRIBUTE>
+          <DIV>
+            <DIV>
+Infracciones.Placa                      </DIV>
+          </DIV>
+        </ATTRIBUTE>
+      </FR>
+      <FR>
+        <ATTRIBUTE>
+          <DIV>
+            <DIV>
+Infracciones.Fecha                      </DIV>
+          </DIV>
+        </ATTRIBUTE>
+      </FR>
+      <FR>
+        <ATTRIBUTE>
+          <DIV>
+            <DIV>
+Infracciones.lugar                      </DIV>
+          </DIV>
+        </ATTRIBUTE>
+      </FR>
+    </Q5>
+    <Q6>
+      <APTYPE>
+simple      </APTYPE>
+      <GR>
+        <ATTRIBUTE>
+          <DIV>
+            <DIV>
+                          <DIV>
+Infracciones.Placa                                    </DIV>
+                      </DIV>
+          </DIV>
+        </ATTRIBUTE>
+        <VRS>
+value        </VRS>
+      </GR>
+      <GR>
+        <ATTRIBUTE>
+          <DIV>
+            <DIV>
+                          <DIV>
+Infracciones.Velocidad                                    </DIV>
+                      </DIV>
+          </DIV>
+        </ATTRIBUTE>
+        <VRS>
+range        </VRS>
+      </GR>
+      <FR>
+        <ATTRIBUTE>
+          <DIV>
+            <DIV>
+                          <DIV>
+Personas.Cedula                                    </DIV>
+                      </DIV>
+          </DIV>
+        </ATTRIBUTE>
+      </FR>
+      <FR>
+        <ATTRIBUTE>
+          <DIV>
+            <DIV>
+                          <DIV>
+Personas.Nombre                                    </DIV>
+                      </DIV>
+          </DIV>
+        </ATTRIBUTE>
+      </FR>
+      <FR>
+        <ATTRIBUTE>
+          <DIV>
+            <DIV>
+                          <DIV>
+Personas.Telefono                                    </DIV>
+                      </DIV>
+          </DIV>
+        </ATTRIBUTE>
+      </FR>
+    </Q6>
+  </ACCESS_PATTERNS>
+  <LOGICAL_MODEL>
+    <Q1 qTemplate="SELECT |s|Infracciones__Fecha|e|, |s|Infracciones__lugar|e| FROM |s|tableName|e| WHERE |s|Infracciones__Placa|e|=? and |s|Infracciones__Velocidad|e|=? and |s|Infracciones__Fecha|e|&gt;?;">
+      <tbl>
+        <infracciones_by_placa/>
+        <columns>
+          <infracciones_placa origName="Infracciones__Placa">
+            <K/>
+            <NOCLUST/>
+          </infracciones_placa>
+          <velocidad origName="Infracciones__Velocidad">
+            <K/>
+            <NOCLUST/>
+          </velocidad>
+          <fecha origName="Infracciones__Fecha">
+            <C>
+ASC            </C>
+          </fecha>
+          <lugar origName="Infracciones__lugar">
+            <C>
+ASC            </C>
+          </lugar>
+        </columns>
+      </tbl>
+      <tbl>
+        <infracciones_by_placa1/>
+        <columns>
+          <velocidad origName="Infracciones__Velocidad">
+            <K/>
+            <NOCLUST/>
+          </velocidad>
+          <infracciones_placa origName="Infracciones__Placa">
+            <K/>
+            <NOCLUST/>
+          </infracciones_placa>
+          <fecha origName="Infracciones__Fecha">
+            <C>
+ASC            </C>
+          </fecha>
+          <lugar origName="Infracciones__lugar">
+            <C>
+ASC            </C>
+          </lugar>
+        </columns>
+      </tbl>
+      <tbl>
+        <infracciones_by_placa2/>
+        <columns>
+          <infracciones_placa origName="Infracciones__Placa">
+            <K/>
+            <NOCLUST/>
+          </infracciones_placa>
+          <velocidad origName="Infracciones__Velocidad">
+            <C>
+ASC            </C>
+          </velocidad>
+          <fecha origName="Infracciones__Fecha">
+            <C>
+ASC            </C>
+          </fecha>
+          <lugar origName="Infracciones__lugar">
+            <C>
+ASC            </C>
+          </lugar>
+        </columns>
+      </tbl>
+      <tbl>
+        <infracciones_by_placa3/>
+        <columns>
+          <velocidad origName="Infracciones__Velocidad">
+            <K/>
+            <NOCLUST/>
+          </velocidad>
+          <infracciones_placa origName="Infracciones__Placa">
+            <C>
+ASC            </C>
+          </infracciones_placa>
+          <fecha origName="Infracciones__Fecha">
+            <C>
+ASC            </C>
+          </fecha>
+          <lugar origName="Infracciones__lugar">
+            <C>
+ASC            </C>
+          </lugar>
+        </columns>
+      </tbl>
+    </Q1>
+    <Q2 qTemplate="SELECT |s|Infracciones__lugar|e| FROM |s|tableName|e| WHERE |s|Infracciones__Fecha|e|=? and |s|Infracciones__Placa|e|=?;">
+      <tbl>
+        <infracciones_by_fecha/>
+        <columns>
+          <fecha origName="Infracciones__Fecha">
+            <K/>
+            <NOCLUST/>
+          </fecha>
+          <infracciones_placa origName="Infracciones__Placa">
+            <K/>
+            <NOCLUST/>
+          </infracciones_placa>
+          <lugar origName="Infracciones__lugar">
+            <C>
+ASC            </C>
+          </lugar>
+        </columns>
+      </tbl>
+      <tbl>
+        <infracciones_by_fecha1/>
+        <columns>
+          <infracciones_placa origName="Infracciones__Placa">
+            <K/>
+            <NOCLUST/>
+          </infracciones_placa>
+          <fecha origName="Infracciones__Fecha">
+            <K/>
+            <NOCLUST/>
+          </fecha>
+          <lugar origName="Infracciones__lugar">
+            <C>
+ASC            </C>
+          </lugar>
+        </columns>
+      </tbl>
+      <tbl>
+        <infracciones_by_fecha2/>
+        <columns>
+          <fecha origName="Infracciones__Fecha">
+            <K/>
+            <NOCLUST/>
+          </fecha>
+          <infracciones_placa origName="Infracciones__Placa">
+            <C>
+ASC            </C>
+          </infracciones_placa>
+          <lugar origName="Infracciones__lugar">
+            <C>
+ASC            </C>
+          </lugar>
+        </columns>
+      </tbl>
+      <tbl>
+        <infracciones_by_fecha3/>
+        <columns>
+          <infracciones_placa origName="Infracciones__Placa">
+            <K/>
+            <NOCLUST/>
+          </infracciones_placa>
+          <fecha origName="Infracciones__Fecha">
+            <C>
+ASC            </C>
+          </fecha>
+          <lugar origName="Infracciones__lugar">
+            <C>
+ASC            </C>
+          </lugar>
+        </columns>
+      </tbl>
+    </Q2>
+    <Q3 qTemplate="SELECT |s|Infracciones__Velocidad|e|, |s|Infracciones__lugar|e|, |s|Infracciones__Fecha|e|, |s|Infracciones__Placa|e| FROM |s|tableName|e| WHERE |s|Vehiculos__cedula|e|=? and |s|Infracciones__Velocidad|e|&gt;?;">
+      <tbl>
+        <infraccioness_by_vehiculos/>
+        <columns>
+          <cedula origName="Vehiculos__cedula">
+            <K/>
+            <NOCLUST/>
+          </cedula>
+          <velocidad origName="Infracciones__Velocidad">
+            <C>
+ASC            </C>
+          </velocidad>
+          <lugar origName="Infracciones__lugar">
+            <C>
+ASC            </C>
+          </lugar>
+          <fecha origName="Infracciones__Fecha">
+            <C>
+ASC            </C>
+          </fecha>
+          <infracciones_placa origName="Infracciones__Placa">
+            <C>
+ASC            </C>
+          </infracciones_placa>
+        </columns>
+      </tbl>
+      <tbl>
+        <infraccioness_by_vehiculos1/>
+        <columns>
+          <cedula origName="Vehiculos__cedula">
+            <K/>
+            <NOCLUST/>
+          </cedula>
+          <velocidad origName="Infracciones__Velocidad">
+            <C>
+ASC            </C>
+          </velocidad>
+          <lugar origName="Infracciones__lugar">
+            <C>
+ASC            </C>
+          </lugar>
+          <infracciones_placa origName="Infracciones__Placa">
+            <C>
+ASC            </C>
+          </infracciones_placa>
+          <fecha origName="Infracciones__Fecha">
+            <C>
+ASC            </C>
+          </fecha>
+        </columns>
+      </tbl>
+      <tbl>
+        <infraccioness_by_vehiculos2/>
+        <columns>
+          <cedula origName="Vehiculos__cedula">
+            <K/>
+            <NOCLUST/>
+          </cedula>
+          <velocidad origName="Infracciones__Velocidad">
+            <C>
+ASC            </C>
+          </velocidad>
+          <infracciones_placa origName="Infracciones__Placa">
+            <C>
+ASC            </C>
+          </infracciones_placa>
+          <lugar origName="Infracciones__lugar">
+            <C>
+ASC            </C>
+          </lugar>
+          <fecha origName="Infracciones__Fecha">
+            <C>
+ASC            </C>
+          </fecha>
+        </columns>
+      </tbl>
+      <tbl>
+        <infraccioness_by_vehiculos3/>
+        <columns>
+          <cedula origName="Vehiculos__cedula">
+            <K/>
+            <NOCLUST/>
+          </cedula>
+          <velocidad origName="Infracciones__Velocidad">
+            <C>
+ASC            </C>
+          </velocidad>
+          <infracciones_placa origName="Infracciones__Placa">
+            <C>
+ASC            </C>
+          </infracciones_placa>
+          <fecha origName="Infracciones__Fecha">
+            <C>
+ASC            </C>
+          </fecha>
+          <lugar origName="Infracciones__lugar">
+            <C>
+ASC            </C>
+          </lugar>
+        </columns>
+      </tbl>
+      <tbl>
+        <infraccioness_by_vehiculos4/>
+        <columns>
+          <cedula origName="Vehiculos__cedula">
+            <K/>
+            <NOCLUST/>
+          </cedula>
+          <velocidad origName="Infracciones__Velocidad">
+            <C>
+ASC            </C>
+          </velocidad>
+          <fecha origName="Infracciones__Fecha">
+            <C>
+ASC            </C>
+          </fecha>
+          <infracciones_placa origName="Infracciones__Placa">
+            <C>
+ASC            </C>
+          </infracciones_placa>
+          <lugar origName="Infracciones__lugar">
+            <C>
+ASC            </C>
+          </lugar>
+        </columns>
+      </tbl>
+      <tbl>
+        <infraccioness_by_vehiculos5/>
+        <columns>
+          <cedula origName="Vehiculos__cedula">
+            <K/>
+            <NOCLUST/>
+          </cedula>
+          <velocidad origName="Infracciones__Velocidad">
+            <C>
+ASC            </C>
+          </velocidad>
+          <fecha origName="Infracciones__Fecha">
+            <C>
+ASC            </C>
+          </fecha>
+          <lugar origName="Infracciones__lugar">
+            <C>
+ASC            </C>
+          </lugar>
+          <infracciones_placa origName="Infracciones__Placa">
+            <C>
+ASC            </C>
+          </infracciones_placa>
+        </columns>
+      </tbl>
+    </Q3>
+    <Q4 qTemplate="SELECT |s|Infracciones__Fecha|e|, |s|Infracciones__Placa|e|, |s|Infracciones__Velocidad|e| FROM |s|tableName|e| WHERE |s|Infracciones__lugar|e|=? and |s|Infracciones__Fecha|e|=?;">
+      <tbl>
+        <infracciones_by_lugar/>
+        <columns>
+          <lugar origName="Infracciones__lugar">
+            <K/>
+            <NOCLUST/>
+          </lugar>
+          <fecha origName="Infracciones__Fecha">
+            <K/>
+            <NOCLUST/>
+          </fecha>
+          <infracciones_placa origName="Infracciones__Placa">
+            <C>
+ASC            </C>
+          </infracciones_placa>
+          <velocidad origName="Infracciones__Velocidad"/>
+        </columns>
+      </tbl>
+      <tbl>
+        <infracciones_by_lugar1/>
+        <columns>
+          <fecha origName="Infracciones__Fecha">
+            <K/>
+            <NOCLUST/>
+          </fecha>
+          <lugar origName="Infracciones__lugar">
+            <K/>
+            <NOCLUST/>
+          </lugar>
+          <infracciones_placa origName="Infracciones__Placa">
+            <C>
+ASC            </C>
+          </infracciones_placa>
+          <velocidad origName="Infracciones__Velocidad"/>
+        </columns>
+      </tbl>
+      <tbl>
+        <infracciones_by_lugar2/>
+        <columns>
+          <lugar origName="Infracciones__lugar">
+            <K/>
+            <NOCLUST/>
+          </lugar>
+          <fecha origName="Infracciones__Fecha">
+            <C>
+ASC            </C>
+          </fecha>
+          <infracciones_placa origName="Infracciones__Placa">
+            <C>
+ASC            </C>
+          </infracciones_placa>
+          <velocidad origName="Infracciones__Velocidad"/>
+        </columns>
+      </tbl>
+      <tbl>
+        <infracciones_by_lugar3/>
+        <columns>
+          <fecha origName="Infracciones__Fecha">
+            <K/>
+            <NOCLUST/>
+          </fecha>
+          <lugar origName="Infracciones__lugar">
+            <C>
+ASC            </C>
+          </lugar>
+          <infracciones_placa origName="Infracciones__Placa">
+            <C>
+ASC            </C>
+          </infracciones_placa>
+          <velocidad origName="Infracciones__Velocidad"/>
+        </columns>
+      </tbl>
+    </Q4>
+    <Q5 qTemplate="SELECT |s|Infracciones__Fecha|e|, |s|Infracciones__lugar|e|, |s|Infracciones__Placa|e| FROM |s|tableName|e| WHERE |s|Infracciones__Fecha|e|=? and |s|Infracciones__Velocidad|e|&gt;?;">
+      <tbl>
+        <infracciones_by_fecha0/>
+        <columns>
+          <fecha origName="Infracciones__Fecha">
+            <K/>
+            <NOCLUST/>
+          </fecha>
+          <velocidad origName="Infracciones__Velocidad">
+            <C>
+ASC            </C>
+          </velocidad>
+          <lugar origName="Infracciones__lugar">
+            <C>
+ASC            </C>
+          </lugar>
+          <infracciones_placa origName="Infracciones__Placa">
+            <C>
+ASC            </C>
+          </infracciones_placa>
+        </columns>
+      </tbl>
+      <tbl>
+        <infracciones_by_fecha4/>
+        <columns>
+          <fecha origName="Infracciones__Fecha">
+            <K/>
+            <NOCLUST/>
+          </fecha>
+          <velocidad origName="Infracciones__Velocidad">
+            <C>
+ASC            </C>
+          </velocidad>
+          <infracciones_placa origName="Infracciones__Placa">
+            <C>
+ASC            </C>
+          </infracciones_placa>
+          <lugar origName="Infracciones__lugar">
+            <C>
+ASC            </C>
+          </lugar>
+        </columns>
+      </tbl>
+    </Q5>
+    <Q6 qTemplate="SELECT |s|Personas__Cedula|e|, |s|Personas__Nombre|e|, |s|Personas__Telefono|e| FROM |s|tableName|e| WHERE |s|Infracciones__Placa|e|=? and |s|Infracciones__Velocidad|e|&gt;?;">
+      <tbl>
+        <personass_by_infracciones/>
+        <columns>
+          <infracciones_placa origName="Infracciones__Placa">
+            <K/>
+            <NOCLUST/>
+          </infracciones_placa>
+          <velocidad origName="Infracciones__Velocidad">
+            <C>
+ASC            </C>
+          </velocidad>
+          <lugar origName="Infracciones__lugar">
+            <C>
+ASC            </C>
+          </lugar>
+          <fecha origName="Infracciones__Fecha">
+            <C>
+ASC            </C>
+          </fecha>
+          <cedula origName="Personas__Cedula"/>
+          <nombre origName="Personas__Nombre"/>
+          <telefono origName="Personas__Telefono">
+            <COLL/>
+            <NOCLUST/>
+          </telefono>
+        </columns>
+      </tbl>
+      <tbl>
+        <personass_by_infracciones1/>
+        <columns>
+          <infracciones_placa origName="Infracciones__Placa">
+            <K/>
+            <NOCLUST/>
+          </infracciones_placa>
+          <velocidad origName="Infracciones__Velocidad">
+            <C>
+ASC            </C>
+          </velocidad>
+          <fecha origName="Infracciones__Fecha">
+            <C>
+ASC            </C>
+          </fecha>
+          <lugar origName="Infracciones__lugar">
+            <C>
+ASC            </C>
+          </lugar>
+          <cedula origName="Personas__Cedula"/>
+          <nombre origName="Personas__Nombre"/>
+          <telefono origName="Personas__Telefono">
+            <COLL/>
+            <NOCLUST/>
+          </telefono>
+        </columns>
+      </tbl>
+    </Q6>
+    <LOGICAL_CONFIGEL>
+{"infracciones_by_placa2":"","infracciones_by_fecha3":"","infraccioness_by_vehiculos":"","infracciones_by_lugar":"","infracciones_by_fecha0":"","personass_by_infracciones":""}    </LOGICAL_CONFIGEL>
+  </LOGICAL_MODEL>
+  <PHYSICAL_MODEL>
+{"0":{"listOfInputs":"infracciones_by_placa,infracciones_placa,fecha,velocidad,lugar","listOfSelectValues":"TEXT,K,TIMESTAMP,cup,INT,cup,INT,cup"},"1":{"listOfInputs":"estadistica_mensual,infracciones_placa,fecha,lugar","listOfSelectValues":"TEXT,K,TIMESTAMP,cup,INT,cup"},"2":{"listOfInputs":"infracciones_by_cedula,cedula,velocidad,lugar,fecha,infracciones_placa","listOfSelectValues":"INT,K,INT,cup,INT,cup,TIMESTAMP,cup,TEXT,cup"},"3":{"listOfInputs":"infracciones_by_lugar,lugar,fecha,infracciones_placa,velocidad","listOfSelectValues":"INT,K,TIMESTAMP,K,TEXT,cup,INT,"},"4":{"listOfInputs":"infracciones_by_fecha,fecha,velocidad,lugar,infracciones_placa","listOfSelectValues":"TIMESTAMP,K,INT,cup,INT,cup,TEXT,cup"},"5":{"listOfInputs":"personas_by_placa,infracciones_placa,velocidad,lugar,fecha,cedula,nombre,telefono","listOfSelectValues":"TEXT,K,INT,cup,INT,cup,TIMESTAMP,cup,INT,,TEXT,,SET,INT,"},"highlightedTables":["infracciones_by_placa2","infracciones_by_fecha3","infraccioness_by_vehiculos","infracciones_by_lugar","infracciones_by_fecha0","personass_by_infracciones"]}  </PHYSICAL_MODEL>
+</KDMPROJECT>

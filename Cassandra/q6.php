@@ -11,7 +11,7 @@ $session   = $cluster->connect("fotodeteccion");
 $v_placa = strtoupper ($_GET['placa']);
 
 // Se arma la consulta
-$q = " SELECT cedula, nombre, telefono FROM personas_by_placa WHERE infracciones_placa='$v_placa' and velocidad>80;";
+$q = "SELECT cedula, nombre, telefono FROM personas_by_placa WHERE infracciones_placa='$v_placa' and velocidad>80;";
 
 //var_dump($q);
 //exit(0); 
@@ -28,8 +28,5 @@ foreach ($result as $row) {
   foreach($telefono as $arr){
     echo "Nombre ".$nombre." Cedula ".$cedula." telefono ".$arr."</br>";
   }
-  
-  
-  
 }
 ?>

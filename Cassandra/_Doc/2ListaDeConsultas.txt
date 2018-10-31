@@ -1,6 +1,6 @@
-Q1: Dada el vehículo(placas) y rango de fechas, se puede consultar las infracciones (mas de 80km). Listando fecha, hora, lugar
-Q2: Dada el año, mes y el vehículo(placas), se puede consultar las estadísticas de total de pasos por cada lugar. Listando lugar y número de pasadas (Note que este es un consolidado mensual)
-Q3: Dada una cedula consultar las infracciones
-Q4: Dada una fecha y lugar se puede consultar las horas del día, vehículo(placas) y velocidad
-Q5: Dado una fecha se puede consultar los vehículos(placas) que sobrepasaron 80km, listando hora del día, lugar y placa.
-Q6: Dada una placa consultar los datos del propietario del vehículo (Nombre, cedula, telefonos).
+﻿Q1: SELECT fecha, lugar, velocidad FROM infracciones_by_placa WHERE infracciones_placa='$v_placa' and fecha > $v_fecha_desde and fecha < $v_fecha_hasta;
+Q2: SELECT lugar, fecha FROM estadistica_mensual WHERE infracciones_placa='$v_placa';
+Q3: SELECT velocidad, lugar, fecha, infracciones_placa FROM infracciones_by_cedula WHERE cedula=$v_cedula and velocidad>80;
+Q4: SELECT fecha, infracciones_placa, velocidad FROM infracciones_by_lugar WHERE lugar=$v_lugar and fecha=$v_fecha;
+Q5: SELECT fecha, lugar, infracciones_placa FROM infracciones_by_fecha WHERE fecha=$v_fecha and velocidad > 80;
+Q6: SELECT cedula, nombre, telefono FROM personas_by_placa WHERE infracciones_placa='$v_placa' and velocidad>80;
