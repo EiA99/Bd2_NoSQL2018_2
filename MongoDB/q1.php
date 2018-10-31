@@ -25,7 +25,9 @@
     $dia = date('d', $fechaInfraccion);
     $mes = date('m', $fechaInfraccion);
     $ano = date('Y', $fechaInfraccion);
-    //$hora = date('h:i:s', $fechaInfraccion);
+    $hora = date('h:i:s', $fechaInfraccion);
+
+    $fechaCompleta = $dia . '/' . $mes . '/' . $ano . '/' . $hora;
 
     $infraccion = $ano . $mes . $dia;
 
@@ -37,7 +39,7 @@
       if ($infraccion >= $desde && $infraccion <= $hasta ) {
         echo '<td>' . $row->placa. "</td>";
         echo '<td>' . $row->velocidad. "</td>";
-        echo '<td>' . $row->tiempo. "</td>";
+        echo '<td>' . $fechaCompleta. "</td>";
         echo '<td>' . $row->lugar. "</td>";
       }
     }

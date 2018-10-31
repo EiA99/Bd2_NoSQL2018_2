@@ -6,7 +6,7 @@
 */
 
 	/*Usted debe cambiar esto segun su configuracion del proyecto (ubicacion dentro del wampp y el puerto del pache*/
-	$URL_HOME = 'http://localhost/Bd2_NoSQL2018_2/';
+	$URL_HOME = 'http://localhost:8000/Bd2_NoSQL2018_2/';
 	//$URL_HOME = 'http://localhost:9090/Bd2_NoSQL2018_2/';
 
 	/*Se recuperan los argumentos*/
@@ -19,15 +19,15 @@
 	}
 
 	/*Lista de Placas*/
-	$listaPlacas = array(	
+	$listaPlacas = array(
 					"AAA111", "BBB111", "CCC111",
 					"AAA222", "BBB222", "CCC222",
 					"AAA333", "BBB333", "CCC333",
 					"AAA444", "BBB444", "CCC444",
 					"AAA555", "BBB555", "CCC555");
-	$nroPlacas = count( $listaPlacas )-1;				
+	$nroPlacas = count( $listaPlacas )-1;
 	/*Tiempo de Inicio*/
-	$tiempo = time() - ($registros/2);
+	//$tiempo = time() - ($registros/2);
 
 /*Formato en HTML*/
 ?>
@@ -114,14 +114,14 @@ table, th, td {
 </tr>
 <?php
 $time_start = microtime(true); // Tiempo Inicial Proceso
-
+$fecha = '2005/12/30';
 	/*Ciclo*/
-	for( $i= 1 ; $i <= $registros ; $i++ ) {	
+	for( $i= 1 ; $i <= $registros ; $i++ ) {
 		/*Genera los valores de forma aleatoria*/
 		$lugar = rand ( 0 , 9 );
 		$placa = $listaPlacas[ rand ( 0 , $nroPlacas ) ];
-		$tiempo = $tiempo + rand ( 0 , 1 );
-		$velocidad = rand ( 30 , 90 );	
+		$tiempo =  rand(strtotime($fecha), time());
+		$velocidad = rand ( 30 , 90 );
 		/*Arma la cadena del llamado*/
 		$url = 		$URL_HOME .
 					$bd . '/insertar.php'.
@@ -129,7 +129,7 @@ $time_start = microtime(true); // Tiempo Inicial Proceso
 					'&placa='. $placa .
 					'&tiempo='. $tiempo .
 					'&velocidad='. $velocidad;
-		/*Se hace el llamado*/			
+		/*Se hace el llamado*/
 		$contents = file_get_contents( $url );
 		/*Se imprime la fila de la tabla*/
 		echo "<tr><td>$i</td><td>".$url . "</td><td>" . $contents . "</td></tr>\n";

@@ -15,7 +15,7 @@
   echo '<table style="width:100%" border="1px"> ';
   echo '<th> PLACA </th>';
   echo '<th> VELOCIDAD </th>';
-  echo '<th> FECHA </th>';
+  echo '<th> HORA </th>';
   foreach ($cursor as $row) {
 
     $fechaInfraccion = $row->tiempo;

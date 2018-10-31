@@ -9,6 +9,10 @@
   $cursor = $manager->executeQuery('pruebaP2.infracciones', $query);
 
   echo '<table style="width:100%" border="1px"> ';
+  echo '<h4> Infracciones para el vehículo: ' . $placa . '</h4>';
+  echo '<h5> En el año: ' . $ano . ' y mes: ' . $mes .'</h5>';
+  echo '<th> VELOCIDAD </th>';
+  echo '<th> LUGAR </th>';
   foreach ($cursor as $row) {
     $fechaInfraccion = $row->tiempo;
     $diaInfraccion = date('d', $fechaInfraccion);
@@ -16,11 +20,6 @@
     $anoInfraccion = date('Y', $fechaInfraccion);
 
     $velocidad = $row->velocidad;
-
-    echo '<h4> Infracciones para el vehículo: ' . $placa . '</h4>';
-    echo '<h5> En el año: ' . $ano . ' y mes: ' . $mes .'</h5>';
-    echo '<th> VELOCIDAD </th>';
-    echo '<th> LUGAR </th>';
 
     echo '<tr>';
 
