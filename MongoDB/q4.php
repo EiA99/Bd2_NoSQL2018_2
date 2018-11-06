@@ -10,8 +10,17 @@
   $fechaMes = $division[1];
   $fechaAno = $division[0];
 
+  $fecha = strtotime($fechaConsulta);
+  $fecha2 = strtotime($fechaConsulta) + 86399;
+
+  $filter = [
+    'lugar' => $lugar,
+    'tiempo' => ['$gte' => $fecha],
+    'tiempo' => ['$lte' => $fecha2]
+  ];
+
   $manager = new MongoDB\Driver\Manager("mongodb://localhost:27017");
-  $query = new MongoDB\Driver\Query(array('lugar' => $lugar));
+  $query = new MongoDB\Driver\Query($filter);
   $cursor = $manager->executeQuery('pruebaP2.infracciones', $query);
 
   echo '<table style="width:100%" border="1px"> ';

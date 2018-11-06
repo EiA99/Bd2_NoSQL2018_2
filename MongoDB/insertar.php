@@ -34,7 +34,7 @@ $cursor = $manager->executeQuery('pruebaP2.infracciones', $query);
 
 // Armar el JSon Para insertar
 
-$documento = ['placa' => $placa, 'velocidad' => $velocidad, 'lugar' => $lugar, 'tiempo' => $tiempo];
+$documento = ['placa' => $placa, 'velocidad' => (int)$velocidad, 'lugar' => $lugar, 'tiempo' => (int)$tiempo];
 
 /* ==--> insertar el o los registros*/
 

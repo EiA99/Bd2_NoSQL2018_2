@@ -9,8 +9,16 @@
   $fechaMes = $division[1];
   $fechaAno = $division[0];
 
+  $fecha = strtotime($fechaConsulta);
+  $fecha2 = strtotime($fechaConsulta) + 86399;
+
+  $filter = [
+    'tiempo' => ['$gte' => $fecha],
+    'tiempo' => ['$lte' => $fecha2],
+  ];
+
   $manager = new MongoDB\Driver\Manager("mongodb://localhost:27017");
-  $query = new MongoDB\Driver\Query(array());
+  $query = new MongoDB\Driver\Query($filter);
   $cursor = $manager->executeQuery('pruebaP2.infracciones', $query);
 
   echo '<table style="width:100%" border="1px"> ';
@@ -25,7 +33,6 @@
     $mes = date('m', $fechaInfraccion);
     $ano = date('Y', $fechaInfraccion);
     $hora = date('h:i:s', $fechaInfraccion);
-
     $velocidad = $row->velocidad;
 
     echo '<tr>';

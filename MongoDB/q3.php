@@ -16,7 +16,12 @@
   foreach ($result as $row) {
     $placa = $row->placa;
 
-    $query2 = new MongoDB\Driver\Query(array('placa' => $placa));
+    $filter = [
+      'placa' => $placa,
+      'velocidad' => ['$gt' => 80]
+    ];
+
+    $query2 = new MongoDB\Driver\Query($filter);
     $cursor = $manager->executeQuery('pruebaP2.infracciones', $query2);
 
     foreach ($cursor as $row2) {
@@ -32,12 +37,11 @@
 
       echo '<tr>';
 
-      if ($velocidad > 80) {
-          echo '<td>' . $row2->placa. "</td>";
-          echo '<td>' . $row2->velocidad. "</td>";
-          echo '<td>' . $fechaCompleta. "</td>";
-          echo '<td>' . $row2->lugar. "</td>";
-      }
+      echo '<td>' . $row2->placa. "</td>";
+      echo '<td>' . $row2->velocidad. "</td>";
+      echo '<td>' . $fechaCompleta. "</td>";
+      echo '<td>' . $row2->lugar. "</td>";
+
       echo '</tr>';
     }
   }

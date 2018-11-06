@@ -2,8 +2,8 @@
   $time_start = microtime(true);
 
   $ano = htmlspecialchars($_GET["anio"]);
-  $mes = htmlspecialchars($_GET["mes"]);;
-  $placa = htmlspecialchars($_GET["placa"]);;
+  $mes = htmlspecialchars($_GET["mes"]);
+  $placa = htmlspecialchars($_GET["placa"]);
 
   $manager = new MongoDB\Driver\Manager("mongodb://localhost:27017");
   $query = new MongoDB\Driver\Query(array('placa' => $placa));
